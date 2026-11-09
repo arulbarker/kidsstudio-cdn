@@ -1,7 +1,7 @@
 (function () {
   window.__ksStarted = 1;
-  var BODY = "\r\n<div id=\"sidebar-backdrop\" class=\"ks-backdrop\"></div>\r\n<aside id=\"sidebar\" class=\"ks-sidebar\">\r\n  <div class=\"ks-sidebar-head\">\r\n    <div class=\"ks-logo\">\r\n      <span class=\"ks-logo-mark\"><span class=\"ico\" data-ikon=\"bintang\"></span></span>\r\n      <span class=\"ks-logo-text brand-gradient bg-clip-text text-transparent\" data-i18n=\"app.nama\">Kids Studio</span>\r\n    </div>\r\n    <button id=\"nav-hide\" type=\"button\" class=\"ks-icon-btn ks-hp-only\" data-i18n-aria=\"nav.tutup\" aria-label=\"Tutup menu\"><span class=\"ico\" data-ikon=\"x\"></span></button>\r\n  </div>\r\n  <nav class=\"ks-nav\">\r\n    <button type=\"button\" data-tab=\"beranda\" class=\"main-tab-btn active\"><span class=\"ico\" data-ikon=\"rumah\"></span><span data-i18n=\"nav.beranda\">Beranda</span></button>\r\n    <button type=\"button\" data-tab=\"babyborn\" class=\"main-tab-btn\"><span class=\"ico\" data-ikon=\"bayi\"></span><span data-i18n=\"nav.babyborn\">Baby Born</span></button>\r\n    <button type=\"button\" data-tab=\"proyekku\" class=\"main-tab-btn\"><span class=\"ico\" data-ikon=\"folder\"></span><span data-i18n=\"nav.proyekku\">Proyekku</span></button>\r\n    <button type=\"button\" data-tab=\"profil\" class=\"main-tab-btn\"><span class=\"ico\" data-ikon=\"anak\"></span><span data-i18n=\"nav.profil\">Profil Anak</span></button>\r\n    <div class=\"ks-nav-label\" data-i18n=\"nav.segera-judul\">Segera hadir</div>\r\n    <div class=\"nav-segera\"><span class=\"ico\" data-ikon=\"grid\"></span><span data-i18n=\"editor.kolase\">Kolase Anak</span><span class=\"badge\" data-i18n=\"umum.segera\">Segera</span></div>\r\n    <div class=\"nav-segera\"><span class=\"ico\" data-ikon=\"kue\"></span><span data-i18n=\"editor.milestone\">Milestone</span><span class=\"badge\" data-i18n=\"umum.segera\">Segera</span></div>\r\n    <div class=\"nav-segera\"><span class=\"ico\" data-ikon=\"kilau\"></span><span data-i18n=\"editor.ai\">AI Foto Anak</span><span class=\"badge\" data-i18n=\"umum.segera\">Segera</span></div>\r\n  </nav>\r\n  <div class=\"ks-version\">Kids Studio v<span id=\"ks-version\"></span></div>\r\n</aside>\r\n<header class=\"ks-topbar\">\r\n  <button id=\"nav-show\" type=\"button\" class=\"ks-icon-btn\" data-i18n-aria=\"nav.buka\" aria-label=\"Buka menu\"><span class=\"ico\" data-ikon=\"menu\"></span></button>\r\n  <span class=\"ks-topbar-title\" data-i18n=\"app.nama\">Kids Studio</span>\r\n</header>\r\n<main class=\"ks-main\">\r\n  <section id=\"content-beranda\" class=\"main-content-panel\">\r\n    <div class=\"hero\">\r\n      <span class=\"hero-bulat\" style=\"width:320px;height:320px;right:-80px;bottom:-140px\"></span>\r\n      <span class=\"hero-bulat\" style=\"width:140px;height:140px;left:44%;top:-60px\"></span>\r\n      <div>\r\n        <p class=\"hero-kecil\" data-i18n=\"beranda.kecil\">Studio kenangan si kecil</p>\r\n        <h1 id=\"beranda-sapa\" class=\"ks-h1\" data-i18n=\"beranda.judul\">Mau bikin apa hari ini?</h1>\r\n        <p data-i18n=\"beranda.sub\">Pilih editor, isi data singkat, dan karyamu siap dibagikan dalam hitungan menit.</p>\r\n        <button id=\"beranda-mulai\" type=\"button\" class=\"ks-btn ks-btn-kuning\"><span data-i18n=\"beranda.mulai\">Mulai Baby Born</span><span class=\"ico\" data-ikon=\"panah\"></span></button>\r\n      </div>\r\n      <div class=\"hero-art\" aria-hidden=\"true\">\r\n        <div class=\"kartu k1\"><i></i><b></b><b></b></div>\r\n        <div class=\"kartu k2\"><i></i><b></b><b></b></div>\r\n        <span class=\"bintang\" style=\"left:10px;top:20px\" data-ikon-isi=\"bintang\"></span>\r\n        <span class=\"bintang\" style=\"left:60px;bottom:10px;width:24px;height:24px\" data-ikon-isi=\"bintang\"></span>\r\n      </div>\r\n    </div>\r\n    <h2 class=\"ks-h2\" data-i18n=\"beranda.editor-judul\">Pilih editor</h2>\r\n    <div class=\"editor-grid\">\r\n      <button type=\"button\" class=\"ed-card ed-pink\" data-buka=\"babyborn\">\r\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"bayi\"></span></span>\r\n        <span class=\"ed-go\"><span class=\"ico\" data-ikon=\"panah\"></span></span>\r\n        <span class=\"ed-judul\" data-i18n=\"editor.babyborn\">Baby Born</span>\r\n        <span class=\"ed-sub\" data-i18n=\"editor.babyborn-sub\">Kartu kelahiran si kecil</span>\r\n      </button>\r\n      <div class=\"ed-card ed-teal segera\">\r\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"grid\"></span></span>\r\n        <span class=\"badge\" data-i18n=\"umum.segera\">Segera</span>\r\n        <span class=\"ed-judul\" data-i18n=\"editor.kolase\">Kolase Anak</span>\r\n        <span class=\"ed-sub\" data-i18n=\"editor.kolase-sub\">Banyak foto, satu cerita</span>\r\n      </div>\r\n      <div class=\"ed-card ed-amber segera\">\r\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"kue\"></span></span>\r\n        <span class=\"badge\" data-i18n=\"umum.segera\">Segera</span>\r\n        <span class=\"ed-judul\" data-i18n=\"editor.milestone\">Milestone</span>\r\n        <span class=\"ed-sub\" data-i18n=\"editor.milestone-sub\">Foto bulanan dan ulang tahun</span>\r\n      </div>\r\n      <div class=\"ed-card ed-blue segera\">\r\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"kilau\"></span></span>\r\n        <span class=\"badge\" data-i18n=\"umum.segera\">Segera</span>\r\n        <span class=\"ed-judul\" data-i18n=\"editor.ai\">AI Foto Anak</span>\r\n        <span class=\"ed-sub\" data-i18n=\"editor.ai-sub\">Kartun, kostum, latar ajaib</span>\r\n      </div>\r\n    </div>\r\n    <div id=\"beranda-ajak-profil\" class=\"ks-card ajak hidden\">\r\n      <div class=\"ajak-ico\"><span class=\"ico\" data-ikon=\"anak\"></span></div>\r\n      <div>\r\n        <div class=\"ks-card-judul\" data-i18n=\"beranda.ajak-profil-judul\">Kenalan dulu dengan si kecil</div>\r\n        <p class=\"ks-muted\" data-i18n=\"beranda.ajak-profil-isi\"></p>\r\n        <button id=\"beranda-ajak-tombol\" type=\"button\" class=\"ks-btn ks-btn-kecil ks-btn-sekunder\" data-i18n=\"beranda.ajak-profil-tombol\"></button>\r\n      </div>\r\n    </div>\r\n    <div id=\"beranda-terakhir\" class=\"hidden\">\r\n      <h2 class=\"ks-h2\" data-i18n=\"beranda.terakhir\">Lanjutkan karyamu</h2>\r\n      <div id=\"beranda-terakhir-list\" class=\"proyek-grid\"></div>\r\n    </div>\r\n  </section>\r\n\r\n  <section id=\"content-babyborn\" class=\"main-content-panel hidden\">\r\n    <div class=\"bb-kepala\">\r\n      <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"bayi\"></span></span>\r\n      <div>\r\n        <h1 class=\"ks-h1\" data-i18n=\"bb.judul\">Baby Born</h1>\r\n        <p class=\"ks-muted\" data-i18n=\"bb.sub\">Isi data si kecil, pilih desain, lalu sesuaikan sesukamu.</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"bb-layout\">\r\n      <form id=\"bb-form\" class=\"ks-card ks-form\" novalidate>\r\n        <div class=\"ks-row\" style=\"justify-content:space-between\">\r\n          <b data-i18n=\"bb.data\">Data si kecil</b>\r\n          <button id=\"bb-contoh\" type=\"button\" class=\"ks-btn ks-btn-kecil ks-btn-sekunder\" data-i18n=\"bb.contoh\">Isi contoh</button>\r\n        </div>\r\n        <label id=\"bb-profil-wrap\" class=\"ks-field hidden\"><span data-i18n=\"bb.dari-profil\">Ambil dari Profil Anak</span><select id=\"bb-profil\" class=\"ks-input\"></select></label>\r\n        <label class=\"unggah\">\r\n          <span class=\"unggah-pv\" id=\"bb-foto-pv\"><span class=\"ico\" data-ikon=\"foto\"></span></span>\r\n          <span><b data-i18n=\"bb.foto\">Foto si kecil</b><br><small class=\"ks-muted\" data-i18n=\"bb.foto-sub\">Ketuk untuk memilih foto</small></span>\r\n          <input id=\"bb-foto\" type=\"file\" accept=\"image/*\">\r\n        </label>\r\n        <label class=\"ks-field\"><span data-i18n=\"bb.nama\">Nama lengkap</span><input id=\"bb-nama\" class=\"ks-input\" maxlength=\"50\" autocomplete=\"off\" data-i18n-ph=\"bb.nama-ph\"></label>\r\n        <div class=\"ks-field\"><span data-i18n=\"profil.jenis\">Jenis kelamin</span>\r\n          <div class=\"chips\" id=\"bb-jk\">\r\n            <button type=\"button\" class=\"chip\" data-nilai=\"L\" data-i18n=\"profil.jenis-l\">Laki-laki</button>\r\n            <button type=\"button\" class=\"chip\" data-nilai=\"P\" data-i18n=\"profil.jenis-p\">Perempuan</button>\r\n            <button type=\"button\" class=\"chip aktif\" data-nilai=\"N\" data-i18n=\"bb.netral\">Netral</button>\r\n          </div>\r\n        </div>\r\n        <div class=\"dua-kolom\">\r\n          <label class=\"ks-field\"><span data-i18n=\"bb.tanggal\">Tanggal lahir</span><input id=\"bb-tgl\" type=\"date\" class=\"ks-input\"></label>\r\n          <label class=\"ks-field\"><span data-i18n=\"bb.jam\">Jam lahir</span><input id=\"bb-jam\" type=\"time\" class=\"ks-input\"></label>\r\n          <label class=\"ks-field\"><span data-i18n=\"bb.berat\">Berat (kg)</span><input id=\"bb-berat\" class=\"ks-input\" inputmode=\"decimal\" placeholder=\"3,2\"></label>\r\n          <label class=\"ks-field\"><span data-i18n=\"bb.panjang\">Panjang (cm)</span><input id=\"bb-panjang\" class=\"ks-input\" inputmode=\"decimal\" placeholder=\"49\"></label>\r\n        </div>\r\n        <label class=\"ks-field\"><span data-i18n=\"bb.tempat\">Tempat lahir</span><input id=\"bb-tempat\" class=\"ks-input\" maxlength=\"60\" autocomplete=\"off\" data-i18n-ph=\"bb.tempat-ph\"></label>\r\n        <div class=\"dua-kolom\">\r\n          <label class=\"ks-field\"><span data-i18n=\"bb.ayah\">Nama ayah</span><input id=\"bb-ayah\" class=\"ks-input\" maxlength=\"40\" autocomplete=\"off\"></label>\r\n          <label class=\"ks-field\"><span data-i18n=\"bb.ibu\">Nama ibu</span><input id=\"bb-ibu\" class=\"ks-input\" maxlength=\"40\" autocomplete=\"off\"></label>\r\n        </div>\r\n        <label class=\"ks-field\"><span data-i18n=\"bb.anak-ke\">Anak ke-</span><select id=\"bb-anakke\" class=\"ks-input\"></select></label>\r\n        <label class=\"ks-field\"><span data-i18n=\"bb.kutipan\">Doa / kutipan</span><select id=\"bb-kutipan-pilih\" class=\"ks-input\"></select><textarea id=\"bb-kutipan\" class=\"ks-input\" maxlength=\"160\"></textarea></label>\r\n        <div id=\"bb-galat\" class=\"ks-galat\" role=\"alert\"></div>\r\n      </form>\r\n      <div>\r\n        <div class=\"ks-card\">\r\n          <b data-i18n=\"bb.ukuran\">Ukuran</b>\r\n          <div class=\"chips\" id=\"bb-ukuran\" style=\"margin-top:10px\">\r\n            <button type=\"button\" class=\"chip aktif\" data-nilai=\"ig-post\" data-i18n=\"ukuran.ig-post\">Post IG (1:1)</button>\r\n            <button type=\"button\" class=\"chip\" data-nilai=\"ig-story\" data-i18n=\"ukuran.ig-story\">Story / WA (9:16)</button>\r\n            <button type=\"button\" class=\"chip\" data-nilai=\"cetak-10r\" data-i18n=\"ukuran.cetak-10r\">Cetak 10R</button>\r\n          </div>\r\n        </div>\r\n        <h2 class=\"ks-h2\" data-i18n=\"bb.pilih-desain\">Pilih desain</h2>\r\n        <div id=\"bb-template\" class=\"tpl-grid\"></div>\r\n        <div class=\"bb-aksi\">\r\n          <span class=\"ks-muted\" id=\"bb-dipilih\"></span>\r\n          <button id=\"bb-buat\" type=\"button\" class=\"ks-btn\"><span data-i18n=\"bb.buat\">Buat kartu</span><span class=\"ico\" data-ikon=\"panah\"></span></button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n  <section id=\"content-proyekku\" class=\"main-content-panel hidden\">\r\n    <h1 class=\"ks-h1\" data-i18n=\"proyekku.judul\">Proyekku</h1>\r\n    <p class=\"ks-muted\" data-i18n=\"proyekku.sub\"></p>\r\n    <div id=\"proyekku-list\" class=\"proyek-grid\" style=\"margin-top:22px\"></div>\r\n    <div id=\"proyekku-kosong\" class=\"ks-card kosong hidden\">\r\n      <div class=\"ajak-ico\"><span class=\"ico\" data-ikon=\"folder\"></span></div>\r\n      <div class=\"ks-card-judul\" data-i18n=\"proyekku.kosong-judul\">Belum ada karya</div>\r\n      <p class=\"ks-muted\" data-i18n=\"proyekku.kosong\"></p>\r\n      <button id=\"proyekku-mulai\" type=\"button\" class=\"ks-btn\" style=\"margin-top:16px\" data-i18n=\"beranda.mulai\">Mulai Baby Born</button>\r\n    </div>\r\n  </section>\r\n\r\n  <section id=\"content-profil\" class=\"main-content-panel hidden\">\r\n    <h1 class=\"ks-h1\" data-i18n=\"profil.judul\">Profil Anak</h1>\r\n    <p class=\"ks-muted\" data-i18n=\"profil.sub\"></p>\r\n    <div class=\"profil-wrap\">\r\n      <form id=\"profil-form\" class=\"ks-card ks-form\" novalidate>\r\n        <label class=\"ks-field\"><span data-i18n=\"profil.nama\"></span><input id=\"profil-nama\" class=\"ks-input\" maxlength=\"40\" autocomplete=\"off\"></label>\r\n        <label class=\"ks-field\"><span data-i18n=\"profil.panggilan\"></span><input id=\"profil-panggilan\" class=\"ks-input\" maxlength=\"20\" autocomplete=\"off\"></label>\r\n        <label class=\"ks-field\"><span data-i18n=\"profil.tgl-lahir\"></span><input id=\"profil-tgl\" type=\"date\" class=\"ks-input\"></label>\r\n        <label class=\"ks-field\"><span data-i18n=\"profil.jenis\"></span>\r\n          <select id=\"profil-jenis\" class=\"ks-input\">\r\n            <option value=\"L\" data-i18n=\"profil.jenis-l\"></option>\r\n            <option value=\"P\" data-i18n=\"profil.jenis-p\"></option>\r\n            <option value=\"N\" data-i18n=\"profil.jenis-n\"></option>\r\n          </select>\r\n        </label>\r\n        <div id=\"profil-galat\" class=\"ks-galat\" role=\"alert\"></div>\r\n        <div class=\"ks-row\">\r\n          <button type=\"submit\" class=\"ks-btn\" data-i18n=\"profil.simpan\"></button>\r\n          <button id=\"profil-batal\" type=\"button\" class=\"ks-btn ks-btn-sekunder hidden\" data-i18n=\"profil.batal\"></button>\r\n        </div>\r\n      </form>\r\n      <div>\r\n        <b data-i18n=\"profil.daftar\"></b>\r\n        <div id=\"profil-list\" class=\"ks-grid\" style=\"margin-top:12px\"></div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n  <section id=\"content-editor\" class=\"main-content-panel hidden\">\r\n    <div class=\"ed\">\r\n      <div class=\"ed-top\">\r\n        <button id=\"ed-kembali\" type=\"button\" class=\"ed-ikon\" data-i18n-aria=\"editor.kembali\" aria-label=\"Kembali\"><span class=\"ico\" data-ikon=\"kiri\"></span></button>\r\n        <input id=\"ed-judul\" class=\"ed-nama\" maxlength=\"60\" autocomplete=\"off\">\r\n        <button id=\"ed-undo\" type=\"button\" class=\"ed-ikon\" data-i18n-aria=\"editor.undo\" aria-label=\"Urungkan\"><span class=\"ico\" data-ikon=\"undo\"></span></button>\r\n        <button id=\"ed-redo\" type=\"button\" class=\"ed-ikon\" data-i18n-aria=\"editor.redo\" aria-label=\"Ulangi\"><span class=\"ico\" data-ikon=\"redo\"></span></button>\r\n        <button id=\"ed-unduh\" type=\"button\" class=\"ks-btn ks-btn-kecil\" style=\"box-shadow:0 3px 0 var(--p-tua)\"><span class=\"ico\" data-ikon=\"unduh\"></span><span class=\"ed-unduh-teks\" data-i18n=\"editor.unduh\">Unduh</span></button>\r\n      </div>\r\n      <div class=\"ed-mid\">\r\n        <div id=\"ed-stage\" class=\"ed-stage\"><canvas id=\"ed-canvas\"></canvas></div>\r\n        <aside id=\"ed-panel\" class=\"ed-panel tutup\">\r\n          <div class=\"ed-panel-head\"><b id=\"ed-panel-judul\"></b><button id=\"ed-panel-tutup\" type=\"button\" class=\"ed-ikon ed-panel-tutup\" data-i18n-aria=\"nav.tutup\" aria-label=\"Tutup\"><span class=\"ico\" data-ikon=\"x\"></span></button></div>\r\n          <div id=\"ed-panel-isi\"></div>\r\n        </aside>\r\n      </div>\r\n      <nav class=\"ed-tools\">\r\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"teks\"><span class=\"ico\" data-ikon=\"teks\"></span><span data-i18n=\"alat.teks\">Teks</span></button>\r\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"foto\"><span class=\"ico\" data-ikon=\"foto\"></span><span data-i18n=\"alat.foto\">Foto</span></button>\r\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"stiker\"><span class=\"ico\" data-ikon=\"senyum\"></span><span data-i18n=\"alat.stiker\">Stiker</span></button>\r\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"latar\"><span class=\"ico\" data-ikon=\"palet\"></span><span data-i18n=\"alat.latar\">Latar</span></button>\r\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"lapisan\"><span class=\"ico\" data-ikon=\"lapisan\"></span><span data-i18n=\"alat.lapisan\">Lapisan</span></button>\r\n      </nav>\r\n    </div>\r\n    <input id=\"ed-file\" type=\"file\" accept=\"image/*\" class=\"hidden\">\r\n  </section>\r\n</main>\r\n<div id=\"ks-toast\" class=\"ks-toast\" role=\"status\" aria-live=\"polite\"></div>\r\n\r\n\r\n\r\n\r\n";
-  var CSS = "\r\n:root{--p:#534AB7;--p-tua:#3C3489;--p-muda:#EEEDFE;--p-lembut:#CECBF6;--ink:#26215C;--muted:#6E6A8E;--line:#ECEAF6;--bg:#F7F6FD;--card:#FFFFFF;--pink:#D4537E;--pink-muda:#FBEAF0;--teal:#1D9E75;--teal-muda:#E1F5EE;--amber:#EF9F27;--amber-muda:#FAEEDA;--blue:#378ADD;--blue-muda:#E6F1FB;--kuning:#FAC775;--danger:#E24B4A;--r:20px;--sidebar:260px}\r\n*{box-sizing:border-box}\r\n.hidden{display:none!important}\r\nhtml,body{margin:0;min-height:100%}\r\n.ks-body{font-family:'Nunito',system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}\r\nbutton,input,select,textarea{font:inherit;color:inherit}\r\n.ks-h1,.ks-h2,.judul-font,.ks-logo-text,.ks-topbar-title{font-family:'Baloo 2','Nunito',sans-serif}\r\n.brand-gradient{background:linear-gradient(90deg,var(--pink),var(--p),var(--blue))}\r\n.brand-gradient.bg-clip-text{-webkit-background-clip:text;background-clip:text;color:transparent}\r\n.ico{display:inline-flex;width:22px;height:22px;flex:0 0 auto}\r\n.ico svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}\r\n.ks-sidebar{position:fixed;top:0;bottom:0;left:0;width:var(--sidebar);background:var(--card);border-right:1px solid var(--line);display:flex;flex-direction:column;z-index:40;overflow-y:auto}\r\n.ks-sidebar-head{position:sticky;top:0;background:var(--card);display:flex;align-items:center;justify-content:space-between;padding:20px 18px 14px;z-index:1}\r\n.ks-logo{display:flex;align-items:center;gap:10px}\r\n.ks-logo-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#fff;background:var(--p);box-shadow:0 4px 0 var(--p-tua)}\r\n.ks-logo-mark .ico{width:24px;height:24px}\r\n.ks-logo-text{font-size:23px;font-weight:800}\r\n.ks-nav{display:flex;flex-direction:column;gap:4px;padding:6px 12px}\r\n.ks-nav-label{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:16px 14px 6px}\r\n.main-tab-btn,.nav-segera{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;font-weight:800;font-size:15px;padding:11px 14px;border-radius:14px;cursor:pointer;text-align:left;color:var(--ink)}\r\n.main-tab-btn:hover{background:var(--p-muda)}\r\n.main-tab-btn.active{background:var(--p);color:#fff;box-shadow:0 4px 0 var(--p-tua)}\r\n.nav-segera{cursor:default;color:var(--muted)}\r\n.nav-segera .badge{margin-left:auto}\r\n.badge{display:inline-block;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;background:var(--amber-muda);color:#633806}\r\n.ks-version{margin-top:auto;padding:14px 18px 18px;color:var(--muted);font-size:12px}\r\n.ks-main{margin-left:var(--sidebar);padding:28px 32px 48px;min-height:100vh}\r\n.main-content-panel{max-width:1080px;margin:0 auto}\r\n.ks-topbar,.ks-backdrop,.ks-hp-only{display:none}\r\n.ks-icon-btn{border:0;background:var(--p-muda);color:var(--ink);width:42px;height:42px;border-radius:14px;cursor:pointer;place-items:center;flex:0 0 auto}\r\n.ks-h1{font-size:34px;font-weight:800;margin:0 0 6px;line-height:1.15}\r\n.ks-h2{font-size:22px;font-weight:800;margin:32px 0 14px}\r\n.ks-muted{color:var(--muted);font-size:15px;margin:0;line-height:1.5}\r\n.ks-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}\r\n.ks-card-judul{font-weight:800;font-size:17px;margin-bottom:4px;word-break:break-word}\r\n.ks-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}\r\n.ks-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}\r\n.ks-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:16px;padding:13px 22px;font-weight:800;font-size:15px;cursor:pointer;background:var(--p);color:#fff;min-height:48px;box-shadow:0 4px 0 var(--p-tua);transition:transform .08s,box-shadow .08s}\r\n.ks-btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--p-tua)}\r\n.ks-btn-kuning{background:var(--kuning);color:#412402;box-shadow:0 4px 0 #BA7517}\r\n.ks-btn-kuning:active{box-shadow:0 1px 0 #BA7517}\r\n.ks-btn-sekunder{background:var(--p-muda);color:var(--p-tua);box-shadow:0 4px 0 var(--p-lembut)}\r\n.ks-btn-sekunder:active{box-shadow:0 1px 0 var(--p-lembut)}\r\n.ks-btn-kecil{padding:8px 14px;min-height:38px;font-size:14px;border-radius:12px;box-shadow:0 3px 0 var(--p-lembut)}\r\n.ks-btn-bahaya{background:#FCEBEB;color:#A32D2D;box-shadow:0 3px 0 #F7C1C1}\r\n.ks-btn-lebar{width:100%}\r\n.hero{position:relative;overflow:hidden;background:var(--p);color:#fff;border-radius:28px;padding:34px 34px 30px;display:grid;grid-template-columns:1.3fr 1fr;gap:20px;align-items:center}\r\n.hero .ks-h1{color:#fff;font-size:38px}\r\n.hero p{color:var(--p-lembut);font-size:16px;line-height:1.5;margin:0 0 22px;max-width:460px}\r\n.hero-kecil{display:inline-block;background:rgba(255,255,255,.14);color:#fff!important;font-weight:800;font-size:13px!important;padding:6px 12px;border-radius:999px;margin:0 0 14px!important}\r\n.hero-art{position:relative;height:220px}\r\n.hero-art .kartu{position:absolute;border-radius:20px;background:#fff;box-shadow:0 14px 30px rgba(20,14,70,.35)}\r\n.hero-art .k1{width:150px;height:190px;right:120px;top:20px;transform:rotate(-8deg);background:var(--pink-muda)}\r\n.hero-art .k2{width:160px;height:200px;right:20px;top:6px;transform:rotate(6deg);background:#fff}\r\n.hero-art .k2 i,.hero-art .k1 i{position:absolute;left:50%;top:30%;width:84px;height:84px;margin-left:-42px;border-radius:50%}\r\n.hero-art .k1 i{background:var(--kuning)}\r\n.hero-art .k2 i{background:var(--p-lembut)}\r\n.hero-art .k2 b,.hero-art .k1 b{position:absolute;left:24px;right:24px;height:12px;border-radius:6px;top:66%;background:var(--line)}\r\n.hero-art .k2 b+b,.hero-art .k1 b+b{top:76%;right:50px}\r\n.hero-art .bintang{position:absolute;width:34px;height:34px;color:var(--kuning)}\r\n.hero-art .bintang svg{width:100%;height:100%;fill:currentColor;stroke:none}\r\n.hero-bulat{position:absolute;border-radius:50%;background:rgba(255,255,255,.08)}\r\n.editor-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}\r\n.ed-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;border:0;border-radius:24px;padding:20px 18px 18px;min-height:190px;text-align:left;cursor:pointer;color:#fff;transition:transform .12s}\r\n.ed-card:hover{transform:translateY(-3px)}\r\n.ed-card .ed-ico{width:54px;height:54px;border-radius:18px;background:rgba(255,255,255,.22);display:grid;place-items:center;margin-bottom:auto}\r\n.ed-card .ed-ico .ico{width:28px;height:28px}\r\n.ed-card .ed-judul{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:21px;line-height:1.1;margin-top:18px}\r\n.ed-card .ed-sub{font-size:14px;font-weight:600;opacity:.92}\r\n.ed-card .ed-go{position:absolute;right:16px;top:18px;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center}\r\n.ed-card .ed-go .ico{width:20px;height:20px}\r\n.ed-pink{background:var(--pink);box-shadow:0 6px 0 #993556}\r\n.ed-pink .ed-go{color:var(--pink)}\r\n.ed-teal{background:var(--teal);box-shadow:0 6px 0 #0F6E56}\r\n.ed-amber{background:var(--amber);color:#412402;box-shadow:0 6px 0 #BA7517}\r\n.ed-blue{background:var(--blue);box-shadow:0 6px 0 #185FA5}\r\n.ed-card.segera{cursor:default}\r\n.ed-card.segera:hover{transform:none}\r\n.ed-card.segera .badge{position:absolute;right:16px;top:20px;background:rgba(255,255,255,.9)}\r\n.ajak{display:flex;gap:18px;align-items:center;margin-top:28px;background:var(--amber-muda);border-color:#FAC775}\r\n.ajak-ico{width:64px;height:64px;border-radius:20px;background:#fff;display:grid;place-items:center;color:var(--amber);flex:0 0 auto}\r\n.ajak-ico .ico{width:34px;height:34px}\r\n.ajak .ks-btn{margin-top:12px}\r\n.proyek-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}\r\n.proyek{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}\r\n.proyek-thumb{background:var(--p-muda);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;cursor:pointer;border:0;padding:0;width:100%}\r\n.proyek-thumb img{width:100%;height:100%;object-fit:contain}\r\n.proyek-isi{padding:12px 14px 14px}\r\n.proyek-nama{font-weight:800;font-size:15px;word-break:break-word}\r\n.proyek-isi .ks-row{margin-top:10px}\r\n.kosong{text-align:center;padding:48px 20px;margin-top:20px}\r\n.kosong .ajak-ico{margin:0 auto 14px;background:var(--p-muda);color:var(--p)}\r\n.ks-form{display:grid;gap:16px}\r\n.ks-field{display:grid;gap:7px;font-weight:800;font-size:14px}\r\n.ks-field small{font-weight:600;color:var(--muted)}\r\n.ks-input{font-weight:600;padding:12px 14px;border:2px solid var(--line);border-radius:14px;background:#fff;min-height:48px;width:100%}\r\n.ks-input:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 4px var(--p-muda)}\r\ntextarea.ks-input{min-height:84px;resize:vertical}\r\n.ks-galat{color:#A32D2D;font-size:14px;font-weight:800}\r\n.ks-galat:empty{display:none}\r\n.chips{display:flex;gap:8px;flex-wrap:wrap}\r\n.chip{border:2px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font-weight:800;font-size:14px;cursor:pointer}\r\n.chip.aktif{border-color:var(--p);background:var(--p);color:#fff}\r\n.profil-wrap{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:24px;margin-top:22px;align-items:start}\r\n.profil-card{display:flex;gap:14px;align-items:center}\r\n.avatar{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;flex:0 0 auto}\r\n.av-L{background:var(--blue-muda);color:#0C447C}.av-P{background:var(--pink-muda);color:#72243E}.av-N{background:var(--teal-muda);color:#085041}\r\n.bb-layout{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:24px;margin-top:22px;align-items:start}\r\n.bb-kepala{display:flex;align-items:center;gap:14px}\r\n.bb-kepala .ed-ico{width:56px;height:56px;border-radius:18px;background:var(--pink);color:#fff;display:grid;place-items:center;box-shadow:0 4px 0 #993556;flex:0 0 auto}\r\n.bb-kepala .ico{width:30px;height:30px}\r\n.unggah{position:relative;display:flex;align-items:center;gap:14px;border:2px dashed var(--p-lembut);border-radius:18px;padding:14px;background:var(--p-muda);cursor:pointer}\r\n.unggah input{position:absolute;inset:0;opacity:0;cursor:pointer}\r\n.unggah-pv{width:72px;height:72px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;color:var(--p);flex:0 0 auto}\r\n.unggah-pv img{width:100%;height:100%;object-fit:cover}\r\n.dua-kolom{display:grid;grid-template-columns:1fr 1fr;gap:12px}\r\n.tpl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}\r\n.tpl{border:3px solid transparent;border-radius:18px;background:#fff;padding:6px;cursor:pointer;text-align:center;box-shadow:0 2px 0 var(--line)}\r\n.tpl.aktif{border-color:var(--p);box-shadow:0 4px 0 var(--p-tua)}\r\n.tpl-img{border-radius:12px;overflow:hidden;background:var(--p-muda);display:flex;align-items:center;justify-content:center}\r\n.tpl-img img{width:100%;display:block}\r\n.tpl-nama{font-weight:800;font-size:13px;padding:8px 2px 4px}\r\n.bb-aksi{position:sticky;bottom:12px;margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:12px;display:flex;gap:12px;align-items:center;justify-content:space-between;box-shadow:0 10px 30px rgba(38,33,92,.08)}\r\n.ks-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:13px 20px;border-radius:16px;font-weight:800;font-size:14px;opacity:0;pointer-events:none;transition:all .25s;z-index:90;max-width:calc(100vw - 32px)}\r\n.ks-toast.tampil{opacity:1;transform:translate(-50%,0)}\r\n.ks-toast.galat{background:var(--danger)}\r\n.modal{position:fixed;inset:0;background:rgba(38,33,92,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:80}\r\n.modal-isi{background:#fff;border-radius:24px;padding:22px;width:min(460px,100%);max-height:calc(100vh - 32px);overflow:auto}\r\n.modal-isi img{width:100%;border-radius:14px;margin:12px 0;background:var(--p-muda)}\r\n.ekspor-pilih{display:grid;gap:10px;margin-top:14px}\r\n.ekspor-pilih button{display:flex;align-items:center;gap:12px;text-align:left;border:2px solid var(--line);background:#fff;border-radius:16px;padding:12px 14px;cursor:pointer}\r\n.ekspor-pilih button:hover{border-color:var(--p)}\r\n.ekspor-pilih b{display:block;font-size:15px}\r\n.ekspor-pilih small{color:var(--muted);font-weight:600}\r\nbody.mode-editor .ks-sidebar,body.mode-editor .ks-topbar{display:none!important}\r\nbody.mode-editor .ks-main{margin-left:0;padding:0}\r\nbody.mode-editor #content-editor{max-width:none}\r\n.ed{display:grid;grid-template-rows:auto minmax(0,1fr) auto;grid-template-columns:minmax(0,1fr);width:100%;height:100vh;height:100dvh;overflow:hidden;background:#EFEDF8}\r\n.ed-top{display:flex;align-items:center;gap:8px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line)}\r\n.ed-nama{flex:1;min-width:0;font-weight:800;font-size:16px;border:2px solid transparent;border-radius:12px;padding:8px 10px;background:transparent}\r\n.ed-nama:focus{outline:none;border-color:var(--p-lembut)}\r\n.ed-ikon{border:0;background:var(--p-muda);color:var(--ink);width:42px;height:42px;border-radius:14px;display:grid;place-items:center;cursor:pointer;flex:0 0 auto}\r\n.ed-ikon:disabled{opacity:.35;cursor:default}\r\n.ed-mid{display:grid;grid-template-columns:minmax(0,1fr) 340px;min-height:0}\r\n.ed-stage{display:flex;align-items:center;justify-content:center;padding:18px;min-height:0;min-width:0;overflow:hidden}\r\n.ed-stage .canvas-container{box-shadow:0 12px 40px rgba(38,33,92,.18);border-radius:4px}\r\n.ed-panel{background:#fff;border-left:1px solid var(--line);overflow-y:auto;padding:16px 16px 24px}\r\n.ed-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}\r\n.ed-panel-head b{font-family:'Baloo 2',sans-serif;font-size:19px}\r\n.ed-panel-tutup{display:none}\r\n.ed-tools{display:flex;justify-content:center;gap:4px;background:#fff;border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}\r\n.ed-tool{display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:transparent;border-radius:14px;padding:7px 12px;min-width:64px;font-weight:800;font-size:12px;cursor:pointer;color:var(--muted)}\r\n.ed-tool.aktif{background:var(--p-muda);color:var(--p)}\r\n.ed-label{font-weight:800;font-size:13px;color:var(--muted);margin:16px 0 8px}\r\n.ed-label:first-child{margin-top:0}\r\n.swatch-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:7px}\r\n.swatch{aspect-ratio:1/1;border-radius:10px;border:2px solid rgba(0,0,0,.08);cursor:pointer;padding:0}\r\n.swatch.aktif{outline:3px solid var(--p);outline-offset:2px}\r\n.stiker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}\r\n.stiker-btn{aspect-ratio:1/1;border:2px solid var(--line);border-radius:14px;background:#FAF9FE;padding:10px;cursor:pointer;color:var(--ink)}\r\n.stiker-btn svg{width:100%;height:100%}\r\n.aksi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\r\n.aksi{display:flex;flex-direction:column;align-items:center;gap:4px;border:2px solid var(--line);background:#fff;border-radius:14px;padding:10px 4px;font-size:12px;font-weight:800;cursor:pointer}\r\n.aksi.bahaya{color:#A32D2D}\r\n.font-list{display:grid;gap:6px}\r\n.font-btn{border:2px solid var(--line);background:#fff;border-radius:12px;padding:8px 12px;text-align:left;font-size:18px;cursor:pointer}\r\n.font-btn.aktif{border-color:var(--p);background:var(--p-muda)}\r\n.ed-range{width:100%;accent-color:var(--p)}\r\n.tekan-kosong{color:var(--muted);font-size:14px;line-height:1.5;background:var(--bg);border-radius:14px;padding:12px}\r\n@media (max-width:1000px){.editor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bb-layout,.profil-wrap{grid-template-columns:1fr}}\r\n@media (max-width:767px){\r\n  .ks-sidebar{width:min(86vw,320px);transform:translateX(-100%);transition:transform .25s}\r\n  body.nav-open .ks-sidebar{transform:translateX(0);box-shadow:0 0 40px rgba(0,0,0,.15)}\r\n  body.nav-open .ks-backdrop{display:block;position:fixed;inset:0;background:rgba(38,33,92,.4);z-index:30}\r\n  .ks-hp-only{display:grid}\r\n  .ks-topbar{display:flex;align-items:center;gap:12px;position:sticky;top:0;background:var(--bg);padding:12px 16px;z-index:20}\r\n  .ks-topbar .ks-icon-btn{display:grid}\r\n  .ks-topbar-title{font-weight:800;font-size:21px}\r\n  .ks-main{margin-left:0;padding:6px 16px 40px}\r\n  .ks-h1{font-size:27px}\r\n  .hero{grid-template-columns:1fr;padding:24px 22px;border-radius:24px}\r\n  .hero .ks-h1{font-size:28px}\r\n  .hero-art{display:none}\r\n  .editor-grid{gap:12px}\r\n  .ed-card{min-height:168px;padding:16px 14px;border-radius:20px}\r\n  .ed-card .ed-judul{font-size:18px}\r\n  .ed-card .ed-sub{font-size:13px}\r\n  .ed-card .ed-go{width:32px;height:32px;right:12px;top:14px}\r\n  .ed-card.segera .badge{right:10px;top:14px}\r\n  .ajak{flex-direction:column;text-align:center}\r\n  .dua-kolom{grid-template-columns:1fr 1fr}\r\n  .tpl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}\r\n  .ed-mid{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}\r\n  .ed-top{gap:6px;padding:8px}\r\n  .ed-unduh-teks{display:none}\r\n  #ed-unduh{padding:8px 12px}\r\n  .ed-panel{border-left:0;border-top:1px solid var(--line);border-radius:22px 22px 0 0;max-height:46vh;box-shadow:0 -10px 30px rgba(38,33,92,.08)}\r\n  .ed-panel.tutup{display:none}\r\n  .ed-panel-tutup{display:grid}\r\n  .ed-tool{min-width:0;flex:1;padding:7px 4px}\r\n  .swatch-grid{grid-template-columns:repeat(8,1fr)}\r\n}\r\n";
+  var BODY = "\n<div id=\"sidebar-backdrop\" class=\"ks-backdrop\"></div>\n<aside id=\"sidebar\" class=\"ks-sidebar\">\n  <div class=\"ks-sidebar-head\">\n    <div class=\"ks-logo\">\n      <span class=\"ks-logo-mark\"><span class=\"ico\" data-ikon=\"bintang\"></span></span>\n      <span class=\"ks-logo-text brand-gradient bg-clip-text text-transparent\" data-i18n=\"app.nama\">Kids Studio</span>\n    </div>\n    <button id=\"nav-hide\" type=\"button\" class=\"ks-icon-btn ks-hp-only\" data-i18n-aria=\"nav.tutup\" aria-label=\"Tutup menu\"><span class=\"ico\" data-ikon=\"x\"></span></button>\n  </div>\n  <nav class=\"ks-nav\">\n    <button type=\"button\" data-tab=\"beranda\" class=\"main-tab-btn active\"><span class=\"ico\" data-ikon=\"rumah\"></span><span data-i18n=\"nav.beranda\">Beranda</span></button>\n    <button type=\"button\" data-tab=\"babyborn\" class=\"main-tab-btn\"><span class=\"ico\" data-ikon=\"bayi\"></span><span data-i18n=\"nav.babyborn\">Baby Born</span><span class=\"badge badge-ai\" data-i18n=\"umum.ai\"></span></button>\n    <button type=\"button\" data-tab=\"proyekku\" class=\"main-tab-btn\"><span class=\"ico\" data-ikon=\"folder\"></span><span data-i18n=\"nav.proyekku\">Proyekku</span></button>\n    <button type=\"button\" data-tab=\"profil\" class=\"main-tab-btn\"><span class=\"ico\" data-ikon=\"anak\"></span><span data-i18n=\"nav.profil\">Profil Anak</span></button>\n    <div class=\"ks-nav-label\" data-i18n=\"nav.segera-judul\">Segera hadir</div>\n    <div class=\"nav-segera\"><span class=\"ico\" data-ikon=\"grid\"></span><span data-i18n=\"editor.kolase\">Kolase Anak</span><span class=\"badge\" data-i18n=\"umum.segera\">Segera</span></div>\n    <div class=\"nav-segera\"><span class=\"ico\" data-ikon=\"kue\"></span><span data-i18n=\"editor.milestone\">Milestone</span><span class=\"badge\" data-i18n=\"umum.segera\">Segera</span></div>\n    <div class=\"nav-segera\"><span class=\"ico\" data-ikon=\"kilau\"></span><span data-i18n=\"editor.ai\">AI Foto Anak</span><span class=\"badge\" data-i18n=\"umum.segera\">Segera</span></div>\n  </nav>\n  <div class=\"ks-version\">Kids Studio v<span id=\"ks-version\"></span></div>\n</aside>\n<header class=\"ks-topbar\">\n  <button id=\"nav-show\" type=\"button\" class=\"ks-icon-btn\" data-i18n-aria=\"nav.buka\" aria-label=\"Buka menu\"><span class=\"ico\" data-ikon=\"menu\"></span></button>\n  <span class=\"ks-topbar-title\" data-i18n=\"app.nama\">Kids Studio</span>\n</header>\n<main class=\"ks-main\">\n  <section id=\"content-beranda\" class=\"main-content-panel\">\n    <div class=\"hero\">\n      <span class=\"hero-bulat\" style=\"width:320px;height:320px;right:-80px;bottom:-140px\"></span>\n      <span class=\"hero-bulat\" style=\"width:140px;height:140px;left:44%;top:-60px\"></span>\n      <div>\n        <p id=\"beranda-sapa\" class=\"hero-kecil\" data-i18n=\"beranda.kecil\">Studio kenangan si kecil</p>\n        <h1 class=\"ks-h1\" data-i18n=\"beranda.ai-judul\"></h1>\n        <p data-i18n=\"beranda.ai-sub\"></p>\n        <button id=\"beranda-mulai\" type=\"button\" class=\"ks-btn ks-btn-kuning\"><span class=\"ico\" data-ikon=\"kilau\"></span><span data-i18n=\"beranda.ai-mulai\"></span><span class=\"ico\" data-ikon=\"panah\"></span></button>\n      </div>\n      <div class=\"hero-art\" aria-hidden=\"true\">\n        <div class=\"kartu k1\"><i></i><b></b><b></b></div>\n        <div class=\"kartu k2\"><i></i><b></b><b></b><span class=\"hero-ai\"><span class=\"ico\" data-ikon=\"kilau\"></span><span data-i18n=\"umum.ai\"></span></span></div>\n        <span class=\"bintang\" style=\"left:10px;top:20px\" data-ikon-isi=\"bintang\"></span>\n        <span class=\"bintang\" style=\"left:60px;bottom:10px;width:24px;height:24px\" data-ikon-isi=\"bintang\"></span>\n      </div>\n    </div>\n    <h2 class=\"ks-h2\" data-i18n=\"beranda.editor-judul\">Pilih editor</h2>\n    <div class=\"editor-grid\">\n      <button type=\"button\" class=\"ed-card ed-pink\" data-buka=\"babyborn\">\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"bayi\"></span></span>\n        <span class=\"ed-go\"><span class=\"ico\" data-ikon=\"panah\"></span></span>\n        <span class=\"ed-judul\"><span data-i18n=\"editor.babyborn\">Baby Born</span> <span class=\"badge badge-ai\" data-i18n=\"umum.ai\"></span></span>\n        <span class=\"ed-sub\" data-i18n=\"editor.babyborn-ai-sub\"></span>\n      </button>\n      <div class=\"ed-card ed-teal segera\">\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"grid\"></span></span>\n        <span class=\"badge\" data-i18n=\"umum.segera\">Segera</span>\n        <span class=\"ed-judul\" data-i18n=\"editor.kolase\">Kolase Anak</span>\n        <span class=\"ed-sub\" data-i18n=\"editor.kolase-sub\">Banyak foto, satu cerita</span>\n      </div>\n      <div class=\"ed-card ed-amber segera\">\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"kue\"></span></span>\n        <span class=\"badge\" data-i18n=\"umum.segera\">Segera</span>\n        <span class=\"ed-judul\" data-i18n=\"editor.milestone\">Milestone</span>\n        <span class=\"ed-sub\" data-i18n=\"editor.milestone-sub\">Foto bulanan dan ulang tahun</span>\n      </div>\n      <div class=\"ed-card ed-blue segera\">\n        <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"kilau\"></span></span>\n        <span class=\"badge\" data-i18n=\"umum.segera\">Segera</span>\n        <span class=\"ed-judul\" data-i18n=\"editor.ai\">AI Foto Anak</span>\n        <span class=\"ed-sub\" data-i18n=\"editor.ai-sub\">Kartun, kostum, latar ajaib</span>\n      </div>\n    </div>\n    <div id=\"beranda-ajak-profil\" class=\"ks-card ajak hidden\">\n      <div class=\"ajak-ico\"><span class=\"ico\" data-ikon=\"anak\"></span></div>\n      <div>\n        <div class=\"ks-card-judul\" data-i18n=\"beranda.ajak-profil-judul\">Kenalan dulu dengan si kecil</div>\n        <p class=\"ks-muted\" data-i18n=\"beranda.ajak-profil-isi\"></p>\n        <button id=\"beranda-ajak-tombol\" type=\"button\" class=\"ks-btn ks-btn-kecil ks-btn-sekunder\" data-i18n=\"beranda.ajak-profil-tombol\"></button>\n      </div>\n    </div>\n    <div id=\"beranda-terakhir\" class=\"hidden\">\n      <h2 class=\"ks-h2\" data-i18n=\"beranda.terakhir\">Lanjutkan karyamu</h2>\n      <div id=\"beranda-terakhir-list\" class=\"proyek-grid\"></div>\n    </div>\n  </section>\n\n  <section id=\"content-babyborn\" class=\"main-content-panel hidden\">\n    <div class=\"bb-kepala\">\n      <span class=\"ed-ico\"><span class=\"ico\" data-ikon=\"bayi\"></span></span>\n      <div>\n        <h1 class=\"ks-h1\" data-i18n=\"bb.judul\">Baby Born</h1>\n        <p id=\"bb-sub\" class=\"ks-muted\" data-i18n=\"ai.sub\"></p>\n      </div>\n    </div>\n    <div class=\"seg\" id=\"bb-mode\" role=\"tablist\">\n      <button type=\"button\" class=\"seg-btn aktif\" data-mode=\"ai\" role=\"tab\"><span class=\"ico\" data-ikon=\"kilau\"></span><span data-i18n=\"bb.mode-ai\"></span><span class=\"badge badge-ai\" data-i18n=\"umum.ai\"></span></button>\n      <button type=\"button\" class=\"seg-btn\" data-mode=\"manual\" role=\"tab\"><span class=\"ico\" data-ikon=\"file\"></span><span data-i18n=\"bb.mode-manual\"></span></button>\n    </div>\n    <div id=\"bb-ai\" class=\"ai-layout\">\n      <div class=\"ks-card ai-kontrol\">\n        <div class=\"ai-langkah\"><span class=\"ai-no\">1</span><span data-i18n=\"ai.langkah-foto\"></span></div>\n        <label id=\"ai-unggah\" class=\"ai-unggah\">\n          <input id=\"ai-foto\" type=\"file\" accept=\"image/*\">\n          <span class=\"ai-unggah-kosong\">\n            <span class=\"ai-unggah-ico\"><span class=\"ico\" data-ikon=\"foto\"></span></span>\n            <b data-i18n=\"ai.foto-judul\"></b>\n            <small class=\"ks-muted\" data-i18n=\"ai.foto-sub\"></small>\n          </span>\n          <img id=\"ai-foto-pv\" class=\"hidden\" alt=\"\">\n          <span class=\"ai-unggah-ganti\" data-i18n=\"ai.foto-ganti\"></span>\n        </label>\n        <div class=\"ai-langkah\"><span class=\"ai-no\">2</span><span data-i18n=\"ai.langkah-tema\"></span></div>\n        <div id=\"ai-tema\"></div>\n        <div class=\"ai-langkah\"><span class=\"ai-no\">3</span><span data-i18n=\"ai.langkah-ukuran\"></span></div>\n        <div id=\"ai-rasio\" class=\"ai-rasio\"></div>\n        <div class=\"ai-langkah\"><span class=\"ai-no\">4</span><span data-i18n=\"ai.langkah-opsi\"></span></div>\n        <div class=\"ed-label\" data-i18n=\"ai.nuansa\"></div>\n        <div id=\"ai-nuansa\" class=\"chips\"></div>\n        <div class=\"ed-label\" data-i18n=\"ai.jumlah\"></div>\n        <div id=\"ai-jumlah\" class=\"chips\"></div>\n        <p class=\"ai-aman\"><span class=\"ico\" data-ikon=\"perisai\"></span><span data-i18n=\"ai.aman\"></span></p>\n        <div id=\"ai-galat\" class=\"ks-galat\" role=\"alert\"></div>\n        <button id=\"ai-buat\" type=\"button\" class=\"ks-btn ks-btn-lebar\"><span class=\"ico\" data-ikon=\"kilau\"></span><span data-i18n=\"ai.buat\"></span></button>\n        <button id=\"ai-perhalus\" type=\"button\" class=\"ks-btn ks-btn-sekunder ks-btn-lebar\"><span class=\"ico\" data-ikon=\"bintang\"></span><span data-i18n=\"ai.perhalus\"></span></button>\n        <small class=\"ks-muted ai-catatan\" data-i18n=\"ai.perhalus-sub\"></small>\n        <button id=\"ai-batal\" type=\"button\" class=\"ks-btn ks-btn-bahaya ks-btn-lebar hidden\"><span class=\"ico\" data-ikon=\"x\"></span><span data-i18n=\"ai.batal\"></span></button>\n      </div>\n      <div class=\"ai-hasil-kolom\">\n        <h2 class=\"ks-h2 ai-hasil-judul\" data-i18n=\"ai.hasil\"></h2>\n        <p id=\"ai-status\" class=\"ks-muted ai-status hidden\" role=\"status\"></p>\n        <div id=\"ai-kosong\" class=\"ks-card kosong ai-kosong\">\n          <div class=\"ajak-ico\"><span class=\"ico\" data-ikon=\"kilau\"></span></div>\n          <div class=\"ks-card-judul\" data-i18n=\"ai.hasil-kosong-judul\"></div>\n          <p class=\"ks-muted\" data-i18n=\"ai.hasil-kosong\"></p>\n        </div>\n        <div id=\"ai-hasil\" class=\"ai-hasil-grid\"></div>\n      </div>\n    </div>\n    <div id=\"bb-manual\" class=\"bb-layout hidden\">\n      <form id=\"bb-form\" class=\"ks-card ks-form\" novalidate>\n        <div class=\"ks-row\" style=\"justify-content:space-between\">\n          <b data-i18n=\"bb.data\">Data si kecil</b>\n          <button id=\"bb-contoh\" type=\"button\" class=\"ks-btn ks-btn-kecil ks-btn-sekunder\" data-i18n=\"bb.contoh\">Isi contoh</button>\n        </div>\n        <label id=\"bb-profil-wrap\" class=\"ks-field hidden\"><span data-i18n=\"bb.dari-profil\">Ambil dari Profil Anak</span><select id=\"bb-profil\" class=\"ks-input\"></select></label>\n        <label class=\"unggah\">\n          <span class=\"unggah-pv\" id=\"bb-foto-pv\"><span class=\"ico\" data-ikon=\"foto\"></span></span>\n          <span><b data-i18n=\"bb.foto\">Foto si kecil</b><br><small class=\"ks-muted\" data-i18n=\"bb.foto-sub\">Ketuk untuk memilih foto</small></span>\n          <input id=\"bb-foto\" type=\"file\" accept=\"image/*\">\n        </label>\n        <label class=\"ks-field\"><span data-i18n=\"bb.nama\">Nama lengkap</span><input id=\"bb-nama\" class=\"ks-input\" maxlength=\"50\" autocomplete=\"off\" data-i18n-ph=\"bb.nama-ph\"></label>\n        <div class=\"ks-field\"><span data-i18n=\"profil.jenis\">Jenis kelamin</span>\n          <div class=\"chips\" id=\"bb-jk\">\n            <button type=\"button\" class=\"chip\" data-nilai=\"L\" data-i18n=\"profil.jenis-l\">Laki-laki</button>\n            <button type=\"button\" class=\"chip\" data-nilai=\"P\" data-i18n=\"profil.jenis-p\">Perempuan</button>\n            <button type=\"button\" class=\"chip aktif\" data-nilai=\"N\" data-i18n=\"bb.netral\">Netral</button>\n          </div>\n        </div>\n        <div class=\"dua-kolom\">\n          <label class=\"ks-field\"><span data-i18n=\"bb.tanggal\">Tanggal lahir</span><input id=\"bb-tgl\" type=\"date\" class=\"ks-input\"></label>\n          <label class=\"ks-field\"><span data-i18n=\"bb.jam\">Jam lahir</span><input id=\"bb-jam\" type=\"time\" class=\"ks-input\"></label>\n          <label class=\"ks-field\"><span data-i18n=\"bb.berat\">Berat (kg)</span><input id=\"bb-berat\" class=\"ks-input\" inputmode=\"decimal\" placeholder=\"3,2\"></label>\n          <label class=\"ks-field\"><span data-i18n=\"bb.panjang\">Panjang (cm)</span><input id=\"bb-panjang\" class=\"ks-input\" inputmode=\"decimal\" placeholder=\"49\"></label>\n        </div>\n        <label class=\"ks-field\"><span data-i18n=\"bb.tempat\">Tempat lahir</span><input id=\"bb-tempat\" class=\"ks-input\" maxlength=\"60\" autocomplete=\"off\" data-i18n-ph=\"bb.tempat-ph\"></label>\n        <div class=\"dua-kolom\">\n          <label class=\"ks-field\"><span data-i18n=\"bb.ayah\">Nama ayah</span><input id=\"bb-ayah\" class=\"ks-input\" maxlength=\"40\" autocomplete=\"off\"></label>\n          <label class=\"ks-field\"><span data-i18n=\"bb.ibu\">Nama ibu</span><input id=\"bb-ibu\" class=\"ks-input\" maxlength=\"40\" autocomplete=\"off\"></label>\n        </div>\n        <label class=\"ks-field\"><span data-i18n=\"bb.anak-ke\">Anak ke-</span><select id=\"bb-anakke\" class=\"ks-input\"></select></label>\n        <label class=\"ks-field\"><span data-i18n=\"bb.kutipan\">Doa / kutipan</span><select id=\"bb-kutipan-pilih\" class=\"ks-input\"></select><textarea id=\"bb-kutipan\" class=\"ks-input\" maxlength=\"160\"></textarea></label>\n        <div id=\"bb-galat\" class=\"ks-galat\" role=\"alert\"></div>\n      </form>\n      <div>\n        <div class=\"ks-card\">\n          <b data-i18n=\"bb.ukuran\">Ukuran</b>\n          <div class=\"chips\" id=\"bb-ukuran\" style=\"margin-top:10px\">\n            <button type=\"button\" class=\"chip aktif\" data-nilai=\"ig-post\" data-i18n=\"ukuran.ig-post\">Post IG (1:1)</button>\n            <button type=\"button\" class=\"chip\" data-nilai=\"ig-story\" data-i18n=\"ukuran.ig-story\">Story / WA (9:16)</button>\n            <button type=\"button\" class=\"chip\" data-nilai=\"cetak-10r\" data-i18n=\"ukuran.cetak-10r\">Cetak 10R</button>\n          </div>\n        </div>\n        <h2 class=\"ks-h2\" data-i18n=\"bb.pilih-desain\">Pilih desain</h2>\n        <div id=\"bb-template\" class=\"tpl-grid\"></div>\n        <div class=\"bb-aksi\">\n          <span class=\"ks-muted\" id=\"bb-dipilih\"></span>\n          <button id=\"bb-buat\" type=\"button\" class=\"ks-btn\"><span data-i18n=\"bb.buat\">Buat kartu</span><span class=\"ico\" data-ikon=\"panah\"></span></button>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"content-proyekku\" class=\"main-content-panel hidden\">\n    <h1 class=\"ks-h1\" data-i18n=\"proyekku.judul\">Proyekku</h1>\n    <p class=\"ks-muted\" data-i18n=\"proyekku.sub\"></p>\n    <div id=\"proyekku-list\" class=\"proyek-grid\" style=\"margin-top:22px\"></div>\n    <div id=\"proyekku-kosong\" class=\"ks-card kosong hidden\">\n      <div class=\"ajak-ico\"><span class=\"ico\" data-ikon=\"folder\"></span></div>\n      <div class=\"ks-card-judul\" data-i18n=\"proyekku.kosong-judul\">Belum ada karya</div>\n      <p class=\"ks-muted\" data-i18n=\"proyekku.kosong\"></p>\n      <button id=\"proyekku-mulai\" type=\"button\" class=\"ks-btn\" style=\"margin-top:16px\" data-i18n=\"beranda.mulai\">Mulai Baby Born</button>\n    </div>\n  </section>\n\n  <section id=\"content-profil\" class=\"main-content-panel hidden\">\n    <h1 class=\"ks-h1\" data-i18n=\"profil.judul\">Profil Anak</h1>\n    <p class=\"ks-muted\" data-i18n=\"profil.sub\"></p>\n    <div class=\"profil-wrap\">\n      <form id=\"profil-form\" class=\"ks-card ks-form\" novalidate>\n        <label class=\"ks-field\"><span data-i18n=\"profil.nama\"></span><input id=\"profil-nama\" class=\"ks-input\" maxlength=\"40\" autocomplete=\"off\"></label>\n        <label class=\"ks-field\"><span data-i18n=\"profil.panggilan\"></span><input id=\"profil-panggilan\" class=\"ks-input\" maxlength=\"20\" autocomplete=\"off\"></label>\n        <label class=\"ks-field\"><span data-i18n=\"profil.tgl-lahir\"></span><input id=\"profil-tgl\" type=\"date\" class=\"ks-input\"></label>\n        <label class=\"ks-field\"><span data-i18n=\"profil.jenis\"></span>\n          <select id=\"profil-jenis\" class=\"ks-input\">\n            <option value=\"L\" data-i18n=\"profil.jenis-l\"></option>\n            <option value=\"P\" data-i18n=\"profil.jenis-p\"></option>\n            <option value=\"N\" data-i18n=\"profil.jenis-n\"></option>\n          </select>\n        </label>\n        <div id=\"profil-galat\" class=\"ks-galat\" role=\"alert\"></div>\n        <div class=\"ks-row\">\n          <button type=\"submit\" class=\"ks-btn\" data-i18n=\"profil.simpan\"></button>\n          <button id=\"profil-batal\" type=\"button\" class=\"ks-btn ks-btn-sekunder hidden\" data-i18n=\"profil.batal\"></button>\n        </div>\n      </form>\n      <div>\n        <b data-i18n=\"profil.daftar\"></b>\n        <div id=\"profil-list\" class=\"ks-grid\" style=\"margin-top:12px\"></div>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"content-editor\" class=\"main-content-panel hidden\">\n    <div class=\"ed\">\n      <div class=\"ed-top\">\n        <button id=\"ed-kembali\" type=\"button\" class=\"ed-ikon\" data-i18n-aria=\"editor.kembali\" aria-label=\"Kembali\"><span class=\"ico\" data-ikon=\"kiri\"></span></button>\n        <input id=\"ed-judul\" class=\"ed-nama\" maxlength=\"60\" autocomplete=\"off\">\n        <button id=\"ed-undo\" type=\"button\" class=\"ed-ikon\" data-i18n-aria=\"editor.undo\" aria-label=\"Urungkan\"><span class=\"ico\" data-ikon=\"undo\"></span></button>\n        <button id=\"ed-redo\" type=\"button\" class=\"ed-ikon\" data-i18n-aria=\"editor.redo\" aria-label=\"Ulangi\"><span class=\"ico\" data-ikon=\"redo\"></span></button>\n        <button id=\"ed-unduh\" type=\"button\" class=\"ks-btn ks-btn-kecil\" style=\"box-shadow:0 3px 0 var(--p-tua)\"><span class=\"ico\" data-ikon=\"unduh\"></span><span class=\"ed-unduh-teks\" data-i18n=\"editor.unduh\">Unduh</span></button>\n      </div>\n      <div class=\"ed-mid\">\n        <div id=\"ed-stage\" class=\"ed-stage\"><canvas id=\"ed-canvas\"></canvas></div>\n        <aside id=\"ed-panel\" class=\"ed-panel tutup\">\n          <div class=\"ed-panel-head\"><b id=\"ed-panel-judul\"></b><button id=\"ed-panel-tutup\" type=\"button\" class=\"ed-ikon ed-panel-tutup\" data-i18n-aria=\"nav.tutup\" aria-label=\"Tutup\"><span class=\"ico\" data-ikon=\"x\"></span></button></div>\n          <div id=\"ed-panel-isi\"></div>\n        </aside>\n      </div>\n      <nav class=\"ed-tools\">\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"teks\"><span class=\"ico\" data-ikon=\"teks\"></span><span data-i18n=\"alat.teks\">Teks</span></button>\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"foto\"><span class=\"ico\" data-ikon=\"foto\"></span><span data-i18n=\"alat.foto\">Foto</span></button>\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"stiker\"><span class=\"ico\" data-ikon=\"senyum\"></span><span data-i18n=\"alat.stiker\">Stiker</span></button>\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"latar\"><span class=\"ico\" data-ikon=\"palet\"></span><span data-i18n=\"alat.latar\">Latar</span></button>\n        <button type=\"button\" class=\"ed-tool\" data-alat=\"lapisan\"><span class=\"ico\" data-ikon=\"lapisan\"></span><span data-i18n=\"alat.lapisan\">Lapisan</span></button>\n      </nav>\n    </div>\n    <input id=\"ed-file\" type=\"file\" accept=\"image/*\" class=\"hidden\">\n  </section>\n</main>\n<div id=\"ks-toast\" class=\"ks-toast\" role=\"status\" aria-live=\"polite\"></div>\n\n\n\n\n\n";
+  var CSS = "\n:root{--p:#534AB7;--p-tua:#3C3489;--p-muda:#EEEDFE;--p-lembut:#CECBF6;--ink:#26215C;--muted:#6E6A8E;--line:#ECEAF6;--bg:#F7F6FD;--card:#FFFFFF;--pink:#D4537E;--pink-muda:#FBEAF0;--teal:#1D9E75;--teal-muda:#E1F5EE;--amber:#EF9F27;--amber-muda:#FAEEDA;--blue:#378ADD;--blue-muda:#E6F1FB;--kuning:#FAC775;--danger:#E24B4A;--r:20px;--sidebar:260px}\n*{box-sizing:border-box}\n.hidden{display:none!important}\nhtml,body{margin:0;min-height:100%}\n.ks-body{font-family:'Nunito',system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}\nbutton,input,select,textarea{font:inherit;color:inherit}\n.ks-h1,.ks-h2,.judul-font,.ks-logo-text,.ks-topbar-title{font-family:'Baloo 2','Nunito',sans-serif}\n.brand-gradient{background:linear-gradient(90deg,var(--pink),var(--p),var(--blue))}\n.brand-gradient.bg-clip-text{-webkit-background-clip:text;background-clip:text;color:transparent}\n.ico{display:inline-flex;width:22px;height:22px;flex:0 0 auto}\n.ico svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}\n.ks-sidebar{position:fixed;top:0;bottom:0;left:0;width:var(--sidebar);background:var(--card);border-right:1px solid var(--line);display:flex;flex-direction:column;z-index:40;overflow-y:auto}\n.ks-sidebar-head{position:sticky;top:0;background:var(--card);display:flex;align-items:center;justify-content:space-between;padding:20px 18px 14px;z-index:1}\n.ks-logo{display:flex;align-items:center;gap:10px}\n.ks-logo-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#fff;background:var(--p);box-shadow:0 4px 0 var(--p-tua)}\n.ks-logo-mark .ico{width:24px;height:24px}\n.ks-logo-text{font-size:23px;font-weight:800}\n.ks-nav{display:flex;flex-direction:column;gap:4px;padding:6px 12px}\n.ks-nav-label{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:16px 14px 6px}\n.main-tab-btn,.nav-segera{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;font-weight:800;font-size:15px;padding:11px 14px;border-radius:14px;cursor:pointer;text-align:left;color:var(--ink)}\n.main-tab-btn:hover{background:var(--p-muda)}\n.main-tab-btn.active{background:var(--p);color:#fff;box-shadow:0 4px 0 var(--p-tua)}\n.nav-segera{cursor:default;color:var(--muted)}\n.nav-segera .badge{margin-left:auto}\n.badge{display:inline-block;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;background:var(--amber-muda);color:#633806}\n.ks-version{margin-top:auto;padding:14px 18px 18px;color:var(--muted);font-size:12px}\n.ks-main{margin-left:var(--sidebar);padding:28px 32px 48px;min-height:100vh}\n.main-content-panel{max-width:1080px;margin:0 auto}\n.ks-topbar,.ks-backdrop,.ks-hp-only{display:none}\n.ks-icon-btn{border:0;background:var(--p-muda);color:var(--ink);width:42px;height:42px;border-radius:14px;cursor:pointer;place-items:center;flex:0 0 auto}\n.ks-h1{font-size:34px;font-weight:800;margin:0 0 6px;line-height:1.15}\n.ks-h2{font-size:22px;font-weight:800;margin:32px 0 14px}\n.ks-muted{color:var(--muted);font-size:15px;margin:0;line-height:1.5}\n.ks-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}\n.ks-card-judul{font-weight:800;font-size:17px;margin-bottom:4px;word-break:break-word}\n.ks-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}\n.ks-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}\n.ks-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:16px;padding:13px 22px;font-weight:800;font-size:15px;cursor:pointer;background:var(--p);color:#fff;min-height:48px;box-shadow:0 4px 0 var(--p-tua);transition:transform .08s,box-shadow .08s}\n.ks-btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--p-tua)}\n.ks-btn-kuning{background:var(--kuning);color:#412402;box-shadow:0 4px 0 #BA7517}\n.ks-btn-kuning:active{box-shadow:0 1px 0 #BA7517}\n.ks-btn-sekunder{background:var(--p-muda);color:var(--p-tua);box-shadow:0 4px 0 var(--p-lembut)}\n.ks-btn-sekunder:active{box-shadow:0 1px 0 var(--p-lembut)}\n.ks-btn-kecil{padding:8px 14px;min-height:38px;font-size:14px;border-radius:12px;box-shadow:0 3px 0 var(--p-lembut)}\n.ks-btn-bahaya{background:#FCEBEB;color:#A32D2D;box-shadow:0 3px 0 #F7C1C1}\n.ks-btn-lebar{width:100%}\n.hero{position:relative;overflow:hidden;background:var(--p);color:#fff;border-radius:28px;padding:34px 34px 30px;display:grid;grid-template-columns:1.3fr 1fr;gap:20px;align-items:center}\n.hero .ks-h1{color:#fff;font-size:38px}\n.hero p{color:var(--p-lembut);font-size:16px;line-height:1.5;margin:0 0 22px;max-width:460px}\n.hero-kecil{display:inline-block;background:rgba(255,255,255,.14);color:#fff!important;font-weight:800;font-size:13px!important;padding:6px 12px;border-radius:999px;margin:0 0 14px!important}\n.hero-art{position:relative;height:220px}\n.hero-art .kartu{position:absolute;border-radius:20px;background:#fff;box-shadow:0 14px 30px rgba(20,14,70,.35)}\n.hero-art .k1{width:150px;height:190px;right:120px;top:20px;transform:rotate(-8deg);background:var(--pink-muda)}\n.hero-art .k2{width:160px;height:200px;right:20px;top:6px;transform:rotate(6deg);background:#fff}\n.hero-art .k2 i,.hero-art .k1 i{position:absolute;left:50%;top:30%;width:84px;height:84px;margin-left:-42px;border-radius:50%}\n.hero-art .k1 i{background:var(--kuning)}\n.hero-art .k2 i{background:var(--p-lembut)}\n.hero-art .k2 b,.hero-art .k1 b{position:absolute;left:24px;right:24px;height:12px;border-radius:6px;top:66%;background:var(--line)}\n.hero-art .k2 b+b,.hero-art .k1 b+b{top:76%;right:50px}\n.hero-art .bintang{position:absolute;width:34px;height:34px;color:var(--kuning)}\n.hero-art .bintang svg{width:100%;height:100%;fill:currentColor;stroke:none}\n.hero-bulat{position:absolute;border-radius:50%;background:rgba(255,255,255,.08)}\n.editor-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}\n.ed-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;border:0;border-radius:24px;padding:20px 18px 18px;min-height:190px;text-align:left;cursor:pointer;color:#fff;transition:transform .12s}\n.ed-card:hover{transform:translateY(-3px)}\n.ed-card .ed-ico{width:54px;height:54px;border-radius:18px;background:rgba(255,255,255,.22);display:grid;place-items:center;margin-bottom:auto}\n.ed-card .ed-ico .ico{width:28px;height:28px}\n.ed-card .ed-judul{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:21px;line-height:1.1;margin-top:18px}\n.ed-card .ed-sub{font-size:14px;font-weight:600;opacity:.92}\n.ed-card .ed-go{position:absolute;right:16px;top:18px;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center}\n.ed-card .ed-go .ico{width:20px;height:20px}\n.ed-pink{background:var(--pink);box-shadow:0 6px 0 #993556}\n.ed-pink .ed-go{color:var(--pink)}\n.ed-teal{background:var(--teal);box-shadow:0 6px 0 #0F6E56}\n.ed-amber{background:var(--amber);color:#412402;box-shadow:0 6px 0 #BA7517}\n.ed-blue{background:var(--blue);box-shadow:0 6px 0 #185FA5}\n.ed-card.segera{cursor:default}\n.ed-card.segera:hover{transform:none}\n.ed-card.segera .badge{position:absolute;right:16px;top:20px;background:rgba(255,255,255,.9)}\n.ajak{display:flex;gap:18px;align-items:center;margin-top:28px;background:var(--amber-muda);border-color:#FAC775}\n.ajak-ico{width:64px;height:64px;border-radius:20px;background:#fff;display:grid;place-items:center;color:var(--amber);flex:0 0 auto}\n.ajak-ico .ico{width:34px;height:34px}\n.ajak .ks-btn{margin-top:12px}\n.proyek-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}\n.proyek{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}\n.proyek-thumb{background:var(--p-muda);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;cursor:pointer;border:0;padding:0;width:100%}\n.proyek-thumb img{width:100%;height:100%;object-fit:contain}\n.proyek-isi{padding:12px 14px 14px}\n.proyek-nama{font-weight:800;font-size:15px;word-break:break-word}\n.proyek-isi .ks-row{margin-top:10px}\n.kosong{text-align:center;padding:48px 20px;margin-top:20px}\n.kosong .ajak-ico{margin:0 auto 14px;background:var(--p-muda);color:var(--p)}\n.ks-form{display:grid;gap:16px}\n.ks-field{display:grid;gap:7px;font-weight:800;font-size:14px}\n.ks-field small{font-weight:600;color:var(--muted)}\n.ks-input{font-weight:600;padding:12px 14px;border:2px solid var(--line);border-radius:14px;background:#fff;min-height:48px;width:100%}\n.ks-input:focus{outline:none;border-color:var(--p);box-shadow:0 0 0 4px var(--p-muda)}\ntextarea.ks-input{min-height:84px;resize:vertical}\n.ks-galat{color:#A32D2D;font-size:14px;font-weight:800}\n.ks-galat:empty{display:none}\n.chips{display:flex;gap:8px;flex-wrap:wrap}\n.chip{border:2px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font-weight:800;font-size:14px;cursor:pointer}\n.chip.aktif{border-color:var(--p);background:var(--p);color:#fff}\n.profil-wrap{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:24px;margin-top:22px;align-items:start}\n.profil-card{display:flex;gap:14px;align-items:center}\n.avatar{width:52px;height:52px;border-radius:18px;display:grid;place-items:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:22px;flex:0 0 auto}\n.av-L{background:var(--blue-muda);color:#0C447C}.av-P{background:var(--pink-muda);color:#72243E}.av-N{background:var(--teal-muda);color:#085041}\n.bb-layout{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:24px;margin-top:22px;align-items:start}\n.bb-kepala{display:flex;align-items:center;gap:14px}\n.bb-kepala .ed-ico{width:56px;height:56px;border-radius:18px;background:var(--pink);color:#fff;display:grid;place-items:center;box-shadow:0 4px 0 #993556;flex:0 0 auto}\n.bb-kepala .ico{width:30px;height:30px}\n.unggah{position:relative;display:flex;align-items:center;gap:14px;border:2px dashed var(--p-lembut);border-radius:18px;padding:14px;background:var(--p-muda);cursor:pointer}\n.unggah input{position:absolute;inset:0;opacity:0;cursor:pointer}\n.unggah-pv{width:72px;height:72px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;color:var(--p);flex:0 0 auto}\n.unggah-pv img{width:100%;height:100%;object-fit:cover}\n.dua-kolom{display:grid;grid-template-columns:1fr 1fr;gap:12px}\n.tpl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}\n.tpl{border:3px solid transparent;border-radius:18px;background:#fff;padding:6px;cursor:pointer;text-align:center;box-shadow:0 2px 0 var(--line)}\n.tpl.aktif{border-color:var(--p);box-shadow:0 4px 0 var(--p-tua)}\n.tpl-img{border-radius:12px;overflow:hidden;background:var(--p-muda);display:flex;align-items:center;justify-content:center}\n.tpl-img img{width:100%;display:block}\n.tpl-nama{font-weight:800;font-size:13px;padding:8px 2px 4px}\n.bb-aksi{position:sticky;bottom:12px;margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:12px;display:flex;gap:12px;align-items:center;justify-content:space-between;box-shadow:0 10px 30px rgba(38,33,92,.08)}\n.ks-toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:13px 20px;border-radius:16px;font-weight:800;font-size:14px;opacity:0;pointer-events:none;transition:all .25s;z-index:90;max-width:calc(100vw - 32px)}\n.ks-toast.tampil{opacity:1;transform:translate(-50%,0)}\n.ks-toast.galat{background:var(--danger)}\n.modal{position:fixed;inset:0;background:rgba(38,33,92,.55);display:flex;align-items:center;justify-content:center;padding:16px;z-index:80}\n.modal-isi{background:#fff;border-radius:24px;padding:22px;width:min(460px,100%);max-height:calc(100vh - 32px);overflow:auto}\n.modal-isi img{width:100%;border-radius:14px;margin:12px 0;background:var(--p-muda)}\n.ekspor-pilih{display:grid;gap:10px;margin-top:14px}\n.ekspor-pilih button{display:flex;align-items:center;gap:12px;text-align:left;border:2px solid var(--line);background:#fff;border-radius:16px;padding:12px 14px;cursor:pointer}\n.ekspor-pilih button:hover{border-color:var(--p)}\n.ekspor-pilih b{display:block;font-size:15px}\n.ekspor-pilih small{color:var(--muted);font-weight:600}\nbody.mode-editor .ks-sidebar,body.mode-editor .ks-topbar{display:none!important}\nbody.mode-editor .ks-main{margin-left:0;padding:0}\nbody.mode-editor #content-editor{max-width:none}\n.ed{display:grid;grid-template-rows:auto minmax(0,1fr) auto;grid-template-columns:minmax(0,1fr);width:100%;height:100vh;height:100dvh;overflow:hidden;background:#EFEDF8}\n.ed-top{display:flex;align-items:center;gap:8px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line)}\n.ed-nama{flex:1;min-width:0;font-weight:800;font-size:16px;border:2px solid transparent;border-radius:12px;padding:8px 10px;background:transparent}\n.ed-nama:focus{outline:none;border-color:var(--p-lembut)}\n.ed-ikon{border:0;background:var(--p-muda);color:var(--ink);width:42px;height:42px;border-radius:14px;display:grid;place-items:center;cursor:pointer;flex:0 0 auto}\n.ed-ikon:disabled{opacity:.35;cursor:default}\n.ed-mid{display:grid;grid-template-columns:minmax(0,1fr) 340px;min-height:0}\n.ed-stage{display:flex;align-items:center;justify-content:center;padding:18px;min-height:0;min-width:0;overflow:hidden}\n.ed-stage .canvas-container{box-shadow:0 12px 40px rgba(38,33,92,.18);border-radius:4px}\n.ed-panel{background:#fff;border-left:1px solid var(--line);overflow-y:auto;padding:16px 16px 24px}\n.ed-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}\n.ed-panel-head b{font-family:'Baloo 2',sans-serif;font-size:19px}\n.ed-panel-tutup{display:none}\n.ed-tools{display:flex;justify-content:center;gap:4px;background:#fff;border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom))}\n.ed-tool{display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:transparent;border-radius:14px;padding:7px 12px;min-width:64px;font-weight:800;font-size:12px;cursor:pointer;color:var(--muted)}\n.ed-tool.aktif{background:var(--p-muda);color:var(--p)}\n.ed-label{font-weight:800;font-size:13px;color:var(--muted);margin:16px 0 8px}\n.ed-label:first-child{margin-top:0}\n.swatch-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:7px}\n.swatch{aspect-ratio:1/1;border-radius:10px;border:2px solid rgba(0,0,0,.08);cursor:pointer;padding:0}\n.swatch.aktif{outline:3px solid var(--p);outline-offset:2px}\n.stiker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}\n.stiker-btn{aspect-ratio:1/1;border:2px solid var(--line);border-radius:14px;background:#FAF9FE;padding:10px;cursor:pointer;color:var(--ink)}\n.stiker-btn svg{width:100%;height:100%}\n.aksi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\n.aksi{display:flex;flex-direction:column;align-items:center;gap:4px;border:2px solid var(--line);background:#fff;border-radius:14px;padding:10px 4px;font-size:12px;font-weight:800;cursor:pointer}\n.aksi.bahaya{color:#A32D2D}\n.font-list{display:grid;gap:6px}\n.font-btn{border:2px solid var(--line);background:#fff;border-radius:12px;padding:8px 12px;text-align:left;font-size:18px;cursor:pointer}\n.font-btn.aktif{border-color:var(--p);background:var(--p-muda)}\n.ed-range{width:100%;accent-color:var(--p)}\n.tekan-kosong{color:var(--muted);font-size:14px;line-height:1.5;background:var(--bg);border-radius:14px;padding:12px}\n.badge-ai{background:linear-gradient(90deg,var(--pink),var(--p));color:#fff;letter-spacing:.04em}\n.main-tab-btn .badge-ai{margin-left:auto}\n.main-tab-btn.active .badge-ai,.seg-btn.aktif .badge-ai{background:#fff;color:var(--p)}\n.ed-card .badge-ai{vertical-align:4px;font-family:'Nunito',sans-serif;background:#fff;color:var(--pink)}\n.hero-ai{position:absolute;right:-14px;top:-12px;display:flex;align-items:center;gap:4px;background:var(--kuning);color:#412402;font-weight:800;font-size:15px;padding:6px 12px;border-radius:999px;box-shadow:0 4px 0 #BA7517}\n.hero-ai .ico{width:18px;height:18px}\n.seg{display:inline-flex;gap:6px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:6px;margin-top:20px;max-width:100%}\n.seg-btn{display:inline-flex;align-items:center;gap:8px;border:0;background:transparent;border-radius:14px;padding:10px 16px;font-weight:800;font-size:15px;cursor:pointer;color:var(--muted)}\n.seg-btn.aktif{background:var(--p);color:#fff;box-shadow:0 3px 0 var(--p-tua)}\n.seg-btn .ico{width:20px;height:20px}\n.ai-layout{display:grid;grid-template-columns:minmax(0,430px) minmax(0,1fr);gap:24px;margin-top:18px;align-items:start}\n.ai-kontrol{display:grid;gap:12px}\n.ai-langkah{display:flex;align-items:center;gap:10px;font-family:'Baloo 2',sans-serif;font-size:18px;font-weight:800;margin-top:6px}\n.ai-langkah:first-child{margin-top:0}\n.ai-no{width:30px;height:30px;border-radius:50%;background:var(--p);color:#fff;display:grid;place-items:center;font-size:15px;flex:0 0 auto;line-height:1}\n.ai-unggah{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;border:2px dashed var(--p-lembut);border-radius:20px;background:var(--p-muda);min-height:170px;padding:16px;cursor:pointer;overflow:hidden}\n.ai-unggah input{position:absolute;inset:0;opacity:0;cursor:pointer;z-index:2}\n.ai-unggah-kosong{display:flex;flex-direction:column;align-items:center;gap:6px}\n.ai-unggah-kosong small{font-size:13px;max-width:300px}\n.ai-unggah-ico{width:56px;height:56px;border-radius:18px;background:#fff;color:var(--p);display:grid;place-items:center}\n.ai-unggah img{max-width:100%;max-height:280px;border-radius:14px;object-fit:contain;display:block}\n.ai-unggah-ganti{display:none;background:#fff;color:var(--p-tua);font-weight:800;font-size:13px;padding:6px 14px;border-radius:999px;box-shadow:0 2px 0 var(--p-lembut)}\n.ai-unggah.ada{border-style:solid;padding:10px}\n.ai-unggah.ada .ai-unggah-kosong{display:none}\n.ai-unggah.ada .ai-unggah-ganti{display:inline-block}\n.ai-grup{font-size:13px;font-weight:800;color:var(--muted);margin:10px 0 6px}\n.ai-grup:first-child{margin-top:0}\n.ai-tema-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}\n.ai-tema{display:flex;flex-direction:column;align-items:center;gap:3px;background:#fff;border:3px solid var(--line);border-radius:16px;padding:5px 5px 8px;cursor:pointer;text-align:center;color:var(--ink);min-width:0}\n.ai-tema.aktif{border-color:var(--p);box-shadow:0 4px 0 var(--p-tua)}\n.ai-tema-pv{width:100%;height:56px;border-radius:11px;display:grid;place-items:center;font-size:28px;line-height:1}\n.ai-tema b{font-size:13px;line-height:1.2}\n.ai-tema small{font-size:11px;font-weight:700;color:var(--muted);line-height:1.2}\n.ai-rasio{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}\n.ai-rasio button{border:2px solid var(--line);background:#fff;border-radius:14px;padding:10px 4px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;font-weight:800;font-size:14px;min-width:0}\n.ai-rasio button i{display:block;border:2.5px solid var(--p-lembut);border-radius:4px;margin-bottom:2px}\n.ai-rasio button.aktif{border-color:var(--p);background:var(--p-muda)}\n.ai-rasio button.aktif i{border-color:var(--p)}\n.ai-rasio small{font-size:11px;color:var(--muted);font-weight:700;line-height:1.2}\n.chip .titik{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:1px solid rgba(0,0,0,.12)}\n.ai-aman{display:flex;gap:10px;align-items:flex-start;background:var(--teal-muda);color:#085041;border-radius:14px;padding:10px 12px;font-size:13px;font-weight:700;line-height:1.45;margin:4px 0 0}\n.ai-aman .ico{width:20px;height:20px}\n.ai-catatan{font-size:13px;text-align:center;margin-top:-4px}\n.ks-btn:disabled{opacity:.55;cursor:default}\n.ai-hasil-judul{margin-top:0}\n.ai-status{margin:-6px 0 12px;font-weight:800;color:var(--p)}\n.ai-kosong{margin-top:0}\n.ai-hasil-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}\n.ai-hasil-grid:empty{display:none}\n.ai-kartu{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:10px}\n.ai-kartu > img{width:100%;display:block;border-radius:14px;background:var(--p-muda)}\n.ai-nomor{position:absolute;top:18px;left:18px;background:rgba(38,33,92,.75);color:#fff;font-size:12px;font-weight:800;padding:3px 9px;border-radius:999px}\n.ai-tunggu{border-radius:14px;background:linear-gradient(110deg,var(--p-muda) 30%,#fff 50%,var(--p-muda) 70%);background-size:200% 100%;animation:ks-kilap 1.4s linear infinite;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--p);font-weight:800;font-size:14px;text-align:center;padding:16px}\n.ai-tunggu.gagal{animation:none;background:#FCEBEB;color:#A32D2D}\n.ai-putar{width:34px;height:34px;border-radius:50%;border:4px solid var(--p-lembut);border-top-color:var(--p);animation:ks-putar .9s linear infinite}\n@keyframes ks-kilap{to{background-position:-200% 0}}\n@keyframes ks-putar{to{transform:rotate(360deg)}}\n.ai-kartu .aksi-grid,.modal-isi .aksi-grid{margin-top:10px}\n.aksi .ico{width:20px;height:20px}\n.aksi.utama{background:var(--p);border-color:var(--p);color:#fff}\n.aksi.tersimpan{background:var(--teal-muda);border-color:var(--teal-muda);color:#085041}\n.ai-banding{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}\n.ai-banding b{font-size:13px}\n.ai-banding img{margin:6px 0 0!important;object-fit:contain}\n@media (max-width:1000px){.editor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bb-layout,.profil-wrap,.ai-layout{grid-template-columns:1fr}.ai-hasil-judul{margin-top:12px}}\n@media (max-width:767px){\n  .ks-sidebar{width:min(86vw,320px);transform:translateX(-100%);transition:transform .25s}\n  body.nav-open .ks-sidebar{transform:translateX(0);box-shadow:0 0 40px rgba(0,0,0,.15)}\n  body.nav-open .ks-backdrop{display:block;position:fixed;inset:0;background:rgba(38,33,92,.4);z-index:30}\n  .ks-hp-only{display:grid}\n  .ks-topbar{display:flex;align-items:center;gap:12px;position:sticky;top:0;background:var(--bg);padding:12px 16px;z-index:20}\n  .ks-topbar .ks-icon-btn{display:grid}\n  .ks-topbar-title{font-weight:800;font-size:21px}\n  .ks-main{margin-left:0;padding:6px 16px 40px}\n  .ks-h1{font-size:27px}\n  .hero{grid-template-columns:1fr;padding:24px 22px;border-radius:24px}\n  .hero .ks-h1{font-size:28px}\n  .hero-art{display:none}\n  .editor-grid{gap:12px}\n  .ed-card{min-height:168px;padding:16px 14px;border-radius:20px}\n  .ed-card .ed-judul{font-size:18px}\n  .ed-card .ed-sub{font-size:13px}\n  .ed-card .ed-go{width:32px;height:32px;right:12px;top:14px}\n  .ed-card.segera .badge{right:10px;top:14px}\n  .ajak{flex-direction:column;text-align:center}\n  .dua-kolom{grid-template-columns:1fr 1fr}\n  .tpl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}\n  .ed-mid{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}\n  .ed-top{gap:6px;padding:8px}\n  .ed-unduh-teks{display:none}\n  #ed-unduh{padding:8px 12px}\n  .ed-panel{border-left:0;border-top:1px solid var(--line);border-radius:22px 22px 0 0;max-height:46vh;box-shadow:0 -10px 30px rgba(38,33,92,.08)}\n  .ed-panel.tutup{display:none}\n  .ed-panel-tutup{display:grid}\n  .ed-tool{min-width:0;flex:1;padding:7px 4px}\n  .swatch-grid{grid-template-columns:repeat(8,1fr)}\n  .seg{display:flex}\n  .seg-btn{flex:1;justify-content:center;padding:10px 6px;font-size:14px}\n  .ai-hasil-grid{grid-template-columns:1fr}\n  .ai-tema small{display:none}\n  .ai-tema-pv{height:48px;font-size:24px}\n  .ai-rasio small{font-size:10px}\n}\n";
   var BODY_CLASS = ["ks-body"];
   var STYLES = ["https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Fredoka:wght@500;600;700&family=Caveat:wght@600;700&display=swap"];
   var SCRIPTS = ["https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js","https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"];
@@ -197,7 +197,110 @@ window.KS_I18N = {
     'umum.hapus': 'Hapus',
     'umum.yakin-hapus': 'Yakin? Klik lagi',
     'galat.penyimpanan': 'Penyimpanan di perangkat ini tidak bisa dipakai. Coba buka di Chrome/Safari biasa (bukan mode samaran).',
-    'galat.editor': 'Editor gagal dimuat. Periksa koneksi lalu muat ulang.'
+    'galat.editor': 'Editor gagal dimuat. Periksa koneksi lalu muat ulang.',
+    'umum.ai': 'AI',
+    'bb.mode-ai': 'Foto AI',
+    'bb.mode-manual': 'Kartu manual',
+    'ai.sub': 'Unggah satu foto si kecil, pilih tema, dan AI menyulapnya jadi foto newborn ala studio profesional.',
+    'ai.manual-sub': 'Isi data si kecil, pilih desain kartu, lalu sesuaikan sesukamu.',
+    'ai.langkah-foto': 'Foto si kecil',
+    'ai.foto-judul': 'Ketuk untuk unggah foto',
+    'ai.foto-sub': 'Satu foto, wajah terlihat jelas, cahaya cukup. Foto hanya dikirim ke AI Google untuk diproses.',
+    'ai.foto-ganti': 'Ganti foto',
+    'ai.langkah-tema': 'Pilih tema',
+    'ai.langkah-ukuran': 'Ukuran foto',
+    'ai.langkah-opsi': 'Sentuhan akhir',
+    'ai.nuansa': 'Nuansa warna',
+    'ai.jumlah': 'Jumlah variasi',
+    'ai.buat': 'Buat foto newborn',
+    'ai.perhalus': 'Perhalus foto saja',
+    'ai.perhalus-sub': 'Tanpa ganti tema: cahaya studio, kulit halus alami, latar bersih.',
+    'ai.batal': 'Batalkan',
+    'ai.aman': 'Wajah si kecil dijaga tetap sama, selalu berpakaian rapi, pose aman, tanpa tulisan di foto.',
+    'ai.hasil': 'Hasil foto',
+    'ai.hasil-kosong-judul': 'Foto ajaibmu muncul di sini',
+    'ai.hasil-kosong': 'Unggah foto, pilih tema, lalu tekan Buat foto newborn. Biasanya selesai dalam 20-60 detik.',
+    'ai.memproses': 'AI sedang memotret... {selesai}/{total}',
+    'ai.menunggu': 'Menunggu giliran',
+    'ai.memproses-satu': 'Sedang dibuat...',
+    'ai.sudah-simpan': 'Tersimpan',
+    'ai.selesai': '{n} foto siap!',
+    'ai.sebagian': '{n} dari {total} foto berhasil.',
+    'ai.unduh': 'Unduh',
+    'ai.bagikan': 'Bagikan',
+    'ai.simpan': 'Simpan',
+    'ai.tersimpan': 'Tersimpan di Proyekku',
+    'ai.jadikan-kartu': 'Jadikan kartu',
+    'ai.ulang': 'Buat ulang',
+    'ai.bandingkan': 'Bandingkan',
+    'ai.sebelum': 'Sebelum',
+    'ai.sesudah': 'Sesudah',
+    'ai.kartu-isi-data': 'Foto AI sudah terpasang. Isi nama si kecil, pilih desain, lalu tekan Buat kartu.',
+    'ai.bagikan-tidak-bisa': 'Perangkat ini belum bisa membagikan langsung. Foto diunduh saja ya.',
+    'ai.nama-proyek': 'Foto AI {tema}',
+    'ai.perhalus-nama': 'Foto diperhalus',
+    'ai.lihat-judul': 'Foto AI',
+    'ai.nomor': 'Foto {n}',
+    'ai.grup-klasik': 'Klasik & lembut',
+    'ai.grup-mimpi': 'Dunia mimpi',
+    'ai.grup-lucu': 'Lucu & menggemaskan',
+    'ai.grup-nuansa': 'Nuansa khas',
+    'ai.tema-studio-putih': 'Studio putih',
+    'ai.tema-studio-putih-sub': 'Bersih dan elegan',
+    'ai.tema-keranjang-rotan': 'Keranjang rotan',
+    'ai.tema-keranjang-rotan-sub': 'Hangat dan klasik',
+    'ai.tema-bungkus-pastel': 'Bungkus pastel',
+    'ai.tema-bungkus-pastel-sub': 'Bedong lembut',
+    'ai.tema-rustic': 'Kayu & bulu',
+    'ai.tema-rustic-sub': 'Rustic natural',
+    'ai.tema-awan-lembut': 'Awan lembut',
+    'ai.tema-awan-lembut-sub': 'Tidur di awan',
+    'ai.tema-bulan-bintang': 'Bulan & bintang',
+    'ai.tema-bulan-bintang-sub': 'Mimpi indah',
+    'ai.tema-taman-bunga': 'Taman bunga',
+    'ai.tema-taman-bunga-sub': 'Segar dan manis',
+    'ai.tema-pelangi': 'Pelangi ceria',
+    'ai.tema-pelangi-sub': 'Warna-warni lembut',
+    'ai.tema-kostum-hewan': 'Kostum hewan',
+    'ai.tema-kostum-hewan-sub': 'Topi rajut beruang',
+    'ai.tema-mahkota': 'Pangeran & putri',
+    'ai.tema-mahkota-sub': 'Mahkota kain mungil',
+    'ai.tema-islami': 'Islami',
+    'ai.tema-islami-sub': 'Bedong putih syahdu',
+    'ai.tema-batik': 'Batik Nusantara',
+    'ai.tema-batik-sub': 'Kain jarik hangat',
+    'ai.nuansa-pink': 'Pink',
+    'ai.nuansa-biru': 'Biru',
+    'ai.nuansa-netral': 'Netral',
+    'ai.nuansa-krem': 'Krem',
+    'ai.rasio-1-1': '1:1',
+    'ai.rasio-1-1-sub': 'Post IG',
+    'ai.rasio-4-5': '4:5',
+    'ai.rasio-4-5-sub': 'Feed / 10R',
+    'ai.rasio-9-16': '9:16',
+    'ai.rasio-9-16-sub': 'Story / WA',
+    'ai.rasio-3-4': '3:4',
+    'ai.rasio-3-4-sub': 'Cetak foto',
+    'ai.galat-foto': 'Unggah foto si kecil dulu ya.',
+    'ai.galat-tema': 'Pilih salah satu tema dulu.',
+    'ai.galat-rasio': 'Pilih ukuran foto.',
+    'ai.galat-nuansa': 'Pilih nuansa warna.',
+    'ai.galat-jumlah': 'Jumlah variasi 1 sampai 4.',
+    'ai.galat-kuota': 'Batas pemakaian AI di akun Google ini sedang tercapai. Tunggu beberapa menit lalu coba lagi.',
+    'ai.galat-sibuk': 'Server AI Google sedang sibuk. Coba lagi sebentar lagi.',
+    'ai.galat-ditolak': 'Permintaan ditolak AI. Coba foto lain yang lebih jelas.',
+    'ai.galat-akses': 'AI belum bisa diakses. Buka aplikasi ini lewat Gemini Canvas lalu coba lagi.',
+    'ai.galat-umum': 'AI gagal membuat foto. Coba lagi.',
+    'ai.galat-jaringan': 'Koneksi internet terputus. Periksa sinyal lalu coba lagi.',
+    'ai.galat-kosong': 'AI tidak mengirim gambar. Coba lagi atau pilih tema lain.',
+    'ai.galat-diblokir': 'Foto ditolak filter keamanan AI. Coba foto lain, pastikan si kecil berpakaian.',
+    'ai.galat-waktu': 'AI terlalu lama merespons. Coba lagi.',
+    'ai.dibatalkan': 'Pembuatan foto dibatalkan.',
+    'beranda.sapa-pendek': 'Hai keluarga {nama}',
+    'beranda.ai-judul': 'Foto newborn ala studio, cukup dari HP',
+    'beranda.ai-sub': 'Unggah satu foto si kecil, pilih tema lucu, dan AI menyulapnya jadi foto newborn profesional. Wajahnya tetap si kecil.',
+    'beranda.ai-mulai': 'Buat foto newborn dengan AI',
+    'editor.babyborn-ai-sub': 'Foto newborn AI dan kartu kelahiran'
   }
 };
 
@@ -644,10 +747,206 @@ window.KSTemplates = {
   },
   function () {
 
+(function () {
+  var GRUP = [
+    { id: 'klasik', judulKey: 'ai.grup-klasik' },
+    { id: 'mimpi', judulKey: 'ai.grup-mimpi' },
+    { id: 'lucu', judulKey: 'ai.grup-lucu' },
+    { id: 'nuansa', judulKey: 'ai.grup-nuansa' }
+  ];
+  var TEMA = [
+    { id: 'studio-putih', grup: 'klasik', ikon: '\u2728', warna: ['#FFFFFF', '#ECEAF6'], judulKey: 'ai.tema-studio-putih', subKey: 'ai.tema-studio-putih-sub',
+      adegan: 'Clean high-key newborn studio portrait: the baby lies on a smooth seamless white backdrop with a soft white blanket, bright even studio light, minimal and timeless, plenty of clean negative space.',
+      variasi: ['baby lying on the back, camera from above', 'baby resting on one side, hands near the chest', 'close-up portrait of the face and tiny hands', 'wider shot with soft vignette'] },
+    { id: 'keranjang-rotan', grup: 'klasik', ikon: '\uD83E\uDDFA', warna: ['#F5E6CC', '#D9B98C'], judulKey: 'ai.tema-keranjang-rotan', subKey: 'ai.tema-keranjang-rotan-sub',
+      adegan: 'The baby sleeps peacefully swaddled inside a shallow, well-padded woven rattan basket lined with a soft knitted blanket, the basket sits safely on the studio floor on a fluffy rug.',
+      variasi: ['view from above into the basket', 'three-quarter view with the basket edge in front', 'small dried flowers placed around the basket rim', 'warm window light from the side'] },
+    { id: 'bungkus-pastel', grup: 'klasik', ikon: '\uD83C\uDF80', warna: ['#FBEAF0', '#E6F1FB'], judulKey: 'ai.tema-bungkus-pastel', subKey: 'ai.tema-bungkus-pastel-sub',
+      adegan: 'The baby is neatly swaddled in a soft stretchy pastel wrap with a matching tiny knotted headband or bonnet, lying on a cozy textured blanket in layered pastel tones.',
+      variasi: ['tight cocoon swaddle, baby asleep', 'swaddle with a small bow on the chest', 'baby on a round fluffy pillow', 'flat lay from directly above'] },
+    { id: 'rustic', grup: 'nuansa', ikon: '\uD83C\uDF42', warna: ['#E8D9C4', '#8C6A4F'], judulKey: 'ai.tema-rustic', subKey: 'ai.tema-rustic-sub',
+      adegan: 'Rustic newborn set: the baby lies swaddled on a thick faux-fur rug over a weathered wooden floor, natural earthy tones, linen and wool textures, warm soft light.',
+      variasi: ['inside a shallow wooden crate padded with fur', 'on a sheepskin with a small wooden toy nearby', 'wrapped in an oatmeal knit, view from above', 'warm golden side light'] },
+    { id: 'awan-lembut', grup: 'mimpi', ikon: '\u2601\uFE0F', warna: ['#E6F1FB', '#FFFFFF'], judulKey: 'ai.tema-awan-lembut', subKey: 'ai.tema-awan-lembut-sub',
+      adegan: 'Dreamy cloud set: the baby sleeps swaddled on a big fluffy cloud-shaped pillow, surrounded by soft cotton clouds, a light airy sky backdrop and gentle glow.',
+      variasi: ['tiny felt stars hanging softly in the background', 'a small felt rainbow behind the clouds', 'baby curled on the side, view from above', 'soft morning sunbeam'] },
+    { id: 'bulan-bintang', grup: 'mimpi', ikon: '\uD83C\uDF19', warna: ['#26215C', '#7F77DD'], judulKey: 'ai.tema-bulan-bintang', subKey: 'ai.tema-bulan-bintang-sub',
+      adegan: 'Night sky dream set: the baby sleeps swaddled on a large soft crescent-moon shaped cushion placed on the floor, a deep starry backdrop with tiny glowing stars and soft bokeh.',
+      variasi: ['wearing a soft knitted sleepy cap', 'small felt stars on the blanket', 'view from above with a warm glow', 'soft clouds around the moon cushion'] },
+    { id: 'taman-bunga', grup: 'mimpi', ikon: '\uD83C\uDF38', warna: ['#FBEAF0', '#C0DD97'], judulKey: 'ai.tema-taman-bunga', subKey: 'ai.tema-taman-bunga-sub',
+      adegan: 'Flower garden set: the baby lies swaddled on a soft blanket surrounded by fresh blooming flowers and greenery arranged safely around (never on the face), soft natural daylight.',
+      variasi: ['a delicate flower crown headband', 'roses and baby breath around', 'wildflowers and daisies, view from above', 'peonies in soft focus in the foreground'] },
+    { id: 'pelangi', grup: 'lucu', ikon: '\uD83C\uDF08', warna: ['#FAC775', '#ED93B1'], judulKey: 'ai.tema-pelangi', subKey: 'ai.tema-pelangi-sub',
+      adegan: 'Cheerful rainbow set: the baby lies swaddled on a soft blanket under a big felt rainbow arch, little felt clouds and a gentle bright backdrop, joyful but soft colours.',
+      variasi: ['rainbow arch behind the baby', 'small knitted rainbow toy beside the baby', 'view from above on a striped blanket', 'confetti-like felt dots in the background'] },
+    { id: 'kostum-hewan', grup: 'lucu', ikon: '\uD83E\uDDF8', warna: ['#FAEEDA', '#EF9F27'], judulKey: 'ai.tema-kostum-hewan', subKey: 'ai.tema-kostum-hewan-sub',
+      adegan: 'Cute animal costume set: the baby wears a soft knitted animal bonnet with little ears and a matching knitted wrap, lying on a fluffy blanket with a plush toy nearby.',
+      variasi: ['little teddy bear ears bonnet', 'long bunny ears bonnet', 'fluffy lamb bonnet', 'little fox ears bonnet'] },
+    { id: 'mahkota', grup: 'lucu', ikon: '\uD83D\uDC51', warna: ['#FAC775', '#CECBF6'], judulKey: 'ai.tema-mahkota', subKey: 'ai.tema-mahkota-sub',
+      adegan: 'Little royal set: the baby wears a tiny soft felt crown (soft fabric, no sharp parts) and is swaddled in a velvet wrap, lying on a plush velvet cushion with an elegant soft backdrop.',
+      variasi: ['little prince look', 'little princess look', 'tiny cape-like wrap', 'soft golden bokeh behind'] },
+    { id: 'islami', grup: 'nuansa', ikon: '\uD83D\uDD4C', warna: ['#FFFFFF', '#E1F5EE'], judulKey: 'ai.tema-islami', subKey: 'ai.tema-islami-sub',
+      adegan: 'Serene modest set: the baby is neatly wrapped in a clean white muslin swaddle (bedong) with a simple soft white bonnet, lying on white linen, calm minimal atmosphere, soft window light, pure and peaceful.',
+      variasi: ['simple soft crescent shaped pillow', 'soft cream drapery in the background', 'view from above on white linen', 'gentle warm morning light'] },
+    { id: 'batik', grup: 'nuansa', ikon: '\uD83C\uDF3A', warna: ['#F3E3C3', '#8C5A2B'], judulKey: 'ai.tema-batik', subKey: 'ai.tema-batik-sub',
+      adegan: 'Indonesian heritage set: the baby is neatly swaddled in soft batik-patterned cloth (kain jarik), lying on a woven mat with a warm wooden backdrop and a few jasmine flowers placed safely aside.',
+      variasi: ['classic brown sogan batik cloth', 'soft pastel batik cloth', 'view from above on a woven mat', 'warm afternoon light'] }
+  ];
+  var VARIASI_PERHALUS = ['straight-on framing like the original', 'slightly closer crop', 'soft warm tone', 'soft neutral tone'];
+  var NUANSA = [
+    { id: 'pink', judulKey: 'ai.nuansa-pink', warna: '#ED93B1', palet: 'soft blush pink and cream colour palette' },
+    { id: 'biru', judulKey: 'ai.nuansa-biru', warna: '#85B7EB', palet: 'soft baby blue and white colour palette' },
+    { id: 'netral', judulKey: 'ai.nuansa-netral', warna: '#D3D1C7', palet: 'neutral soft white, beige and light grey colour palette' },
+    { id: 'krem', judulKey: 'ai.nuansa-krem', warna: '#EBD9B4', palet: 'warm cream, ivory and light tan colour palette' }
+  ];
+  var RASIO = [
+    { id: '1:1', judulKey: 'ai.rasio-1-1', subKey: 'ai.rasio-1-1-sub', ukuran: 'ig-post', w: 1, h: 1 },
+    { id: '4:5', judulKey: 'ai.rasio-4-5', subKey: 'ai.rasio-4-5-sub', ukuran: 'cetak-10r', w: 4, h: 5 },
+    { id: '9:16', judulKey: 'ai.rasio-9-16', subKey: 'ai.rasio-9-16-sub', ukuran: 'ig-story', w: 9, h: 16 },
+    { id: '3:4', judulKey: 'ai.rasio-3-4', subKey: 'ai.rasio-3-4-sub', ukuran: 'cetak-10r', w: 3, h: 4 }
+  ];
+  var KUNCI = [
+    'Use the baby in the provided photo as the only subject.',
+    'Keep the baby EXACTLY the same person: same face, same face shape, eyes, nose, mouth, ears, skin tone, birthmarks and hair. Do not change the identity, age or ethnicity, and do not turn the baby into a different baby.',
+    'The baby is always fully clothed or neatly swaddled and covered, modest and tidy.',
+    'Safe, natural, comfortable newborn pose lying down and fully supported. No froggy pose, no hanging or suspended baby, no standing or sitting unsupported, nothing covering the face, no dangerous or sharp objects, no open flames.',
+    'Only the baby: no other people, no adults, no hands, no extra babies.',
+    'Absolutely no text, letters, numbers, logos, signatures or watermark anywhere in the image.',
+    'Natural soft skin with realistic texture, no heavy retouching, realistic proportions.'
+  ];
+  function cari(list, id) {
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
+    return null;
+  }
+  function susunPrompt(o) {
+    o = o || {};
+    var nuansa = cari(NUANSA, o.nuansa);
+    var rasio = cari(RASIO, o.rasio);
+    if (!nuansa || !rasio) return null;
+    var bagian;
+    if (o.mode === 'perhalus') {
+      bagian = ['Professional newborn photo retouch of the provided photo.'].concat(KUNCI, [
+        'Enhance only: soft professional studio light, gentle even exposure, natural smooth skin, reduce noise and blur, sharpen details gently.',
+        'Replace a messy background with a clean, simple, softly blurred backdrop in a ' + nuansa.palet + '.',
+        'Keep the original pose, clothing and framing.'
+      ]);
+    } else {
+      var tema = cari(TEMA, o.tema);
+      if (!tema) return null;
+      bagian = ['Professional newborn photography session, high-end studio quality, soft diffused light, shallow depth of field, gentle and warm mood.'].concat(KUNCI, [
+        'Scene: ' + tema.adegan,
+        'Colours: ' + nuansa.palet + '.'
+      ]);
+    }
+    if (o.variasi) bagian.push('Variation for this shot: ' + o.variasi + '.');
+    bagian.push('Aspect ratio: ' + rasio.id + '.');
+    return bagian.join('\n');
+  }
+  function validasiAi(o) {
+    o = o || {};
+    if (typeof o.foto !== 'string' || !/^data:image\/[a-z+]+;base64,/.test(o.foto)) return { ok: false, galat: 'ai.galat-foto' };
+    if (o.mode !== 'perhalus' && !cari(TEMA, o.tema)) return { ok: false, galat: 'ai.galat-tema' };
+    if (!cari(RASIO, o.rasio)) return { ok: false, galat: 'ai.galat-rasio' };
+    if (!cari(NUANSA, o.nuansa)) return { ok: false, galat: 'ai.galat-nuansa' };
+    if (typeof o.jumlah !== 'number' || o.jumlah < 1 || o.jumlah > 4 || o.jumlah % 1) return { ok: false, galat: 'ai.galat-jumlah' };
+    return { ok: true };
+  }
+  function rasioKeUkuran(id) {
+    var r = cari(RASIO, id);
+    return r ? r.ukuran : 'ig-post';
+  }
+  function ukuranPiksel(id, lebar) {
+    var r = cari(RASIO, id) || RASIO[0];
+    return { w: lebar, h: Math.round(lebar * r.h / r.w) };
+  }
+  function pecahDataUrl(url) {
+    var m = /^data:(image\/[a-z+]+);base64,(.+)$/.exec(url || '');
+    return m ? { mimeType: m[1], data: m[2] } : null;
+  }
+  function galatHttp(status) {
+    if (!status) return 'ai.galat-jaringan';
+    if (status === 429) return 'ai.galat-kuota';
+    if (status >= 500) return 'ai.galat-sibuk';
+    if (status === 401 || status === 403) return 'ai.galat-akses';
+    if (status === 400) return 'ai.galat-ditolak';
+    return 'ai.galat-umum';
+  }
+  var BLOKIR = /SAFETY|PROHIBITED|BLOCKLIST|SPII|RECITATION/;
+  function bacaRespons(json) {
+    if (!json || typeof json !== 'object') return { ok: false, galat: 'ai.galat-kosong' };
+    if (json.error) return { ok: false, galat: galatHttp(json.error.code || 0) };
+    var blokir = !!(json.promptFeedback && json.promptFeedback.blockReason);
+    var kand = json.candidates || [];
+    for (var i = 0; i < kand.length; i++) {
+      var c = kand[i] || {};
+      if (BLOKIR.test(c.finishReason || '')) blokir = true;
+      var parts = (c.content && c.content.parts) || [];
+      for (var j = 0; j < parts.length; j++) {
+        var d = parts[j] && (parts[j].inlineData || parts[j].inline_data);
+        if (d && d.data) {
+          var mime = d.mimeType || d.mime_type || 'image/png';
+          if (/^image\//.test(mime)) return { ok: true, mimeType: mime, data: d.data, src: 'data:' + mime + ';base64,' + d.data };
+        }
+      }
+    }
+    return { ok: false, galat: blokir ? 'ai.galat-diblokir' : 'ai.galat-kosong' };
+  }
+  var ULANG = { 'ai.galat-sibuk': 1, 'ai.galat-jaringan': 1, 'ai.galat-kosong': 1, 'ai.galat-waktu': 1 };
+  function jedaUlang(galat, ke, dasar) {
+    if (galat === 'ai.galat-kuota') return ke < 1 ? dasar * 4 : -1;
+    if (!ULANG[galat] || ke >= 2) return -1;
+    return dasar * Math.pow(2, ke);
+  }
+  function pilihVariasi(tema, n, rnd) {
+    rnd = rnd || Math.random;
+    var asal = tema ? tema.variasi : VARIASI_PERHALUS;
+    var hasil = [];
+    var kantong = [];
+    while (hasil.length < n) {
+      if (!kantong.length) {
+        kantong = asal.slice();
+        for (var i = kantong.length - 1; i > 0; i--) {
+          var j = Math.floor(rnd() * (i + 1));
+          var x = kantong[i]; kantong[i] = kantong[j]; kantong[j] = x;
+        }
+      }
+      hasil.push(kantong.pop());
+    }
+    return hasil;
+  }
+  function jalankanTerbatas(tugas, batas, onSelesai) {
+    var hasil = new Array(tugas.length);
+    var berikut = 0;
+    function pekerja() {
+      if (berikut >= tugas.length) return Promise.resolve();
+      var i = berikut++;
+      return Promise.resolve().then(function () { return tugas[i](); }).then(
+        function (v) { hasil[i] = { ok: true, nilai: v }; },
+        function (e) { hasil[i] = { ok: false, error: e }; }
+      ).then(function () {
+        if (onSelesai) onSelesai(i, hasil[i]);
+        return pekerja();
+      });
+    }
+    var jalan = [];
+    for (var k = 0; k < Math.min(batas, tugas.length); k++) jalan.push(pekerja());
+    return Promise.all(jalan).then(function () { return hasil; });
+  }
+  window.KSAi = {
+    GRUP: GRUP, TEMA: TEMA, NUANSA: NUANSA, RASIO: RASIO,
+    cari: cari, susunPrompt: susunPrompt, validasiAi: validasiAi, rasioKeUkuran: rasioKeUkuran, ukuranPiksel: ukuranPiksel,
+    pecahDataUrl: pecahDataUrl, galatHttp: galatHttp, bacaRespons: bacaRespons, jedaUlang: jedaUlang,
+    pilihVariasi: pilihVariasi, jalankanTerbatas: jalankanTerbatas
+  };
+})();
+
+  },
+  function () {
+
 const apiKey = "";
 document.addEventListener('DOMContentLoaded', () => {
   const KS = window.KS = window.KS || {};
-  KS.version = '0.2.0';
+  KS.version = '0.3.0';
   const $ = id => document.getElementById(id);
 
   (function () {
@@ -695,7 +994,13 @@ document.addEventListener('DOMContentLoaded', () => {
       kananRata: '<path d="M4 6h16M10 10h10M4 14h16M10 18h10"/>',
       bagikan: '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/>',
       file: '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/>',
-      plus: '<path d="M12 5v14M5 12h14"/>'
+      plus: '<path d="M12 5v14M5 12h14"/>',
+      perisai: '<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+      ulang: '<path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/>',
+      simpan: '<path d="M6 3h12v18l-6-4-6 4z"/>',
+      cek: '<path d="M5 12l5 5 9-10"/>',
+      bandingkan: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 3v18"/>',
+      kartu: '<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8 16h8"/>'
     };
     function svg(nama) { return '<svg viewBox="0 0 24 24" aria-hidden="true">' + (P[nama] || '') + '</svg>'; }
     function isi(root) {
@@ -775,7 +1080,23 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = url;
       });
     }
-    KS.ui = { toast, tombolHapus, h, modal, bacaFoto };
+    function dataUrlKeBlob(url) {
+      const [kepala, isi] = url.split(',');
+      const mime = kepala.match(/:(.*?);/)[1];
+      const bin = atob(isi);
+      const arr = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+      return new Blob([arr], { type: mime });
+    }
+    function unduhBlob(blob, nama) {
+      const url = URL.createObjectURL(blob);
+      const a = h('a', { href: url, download: nama });
+      document.body.append(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
+    }
+    KS.ui = { toast, tombolHapus, h, modal, bacaFoto, dataUrlKeBlob, unduhBlob };
   })();
 
   (function () {
@@ -1101,6 +1422,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     async function bukaProyek(id) {
       const p = await KS.store.loadProject(id);
+      if (p && p.jenis === 'foto-ai') { if (KS.babybornAi) KS.babybornAi.lihat(p); return; }
       if (p) await buka(p);
     }
     function aktif() { return canvas ? canvas.getActiveObject() : null; }
@@ -1290,14 +1612,7 @@ document.addEventListener('DOMContentLoaded', () => {
         KS.ui.toast(t('bb.galat-foto'), 'galat');
       }
     });
-    function dataUrlKeBlob(url) {
-      const [kepala, isi] = url.split(',');
-      const mime = kepala.match(/:(.*?);/)[1];
-      const bin = atob(isi);
-      const arr = new Uint8Array(bin.length);
-      for (let i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
-      return new Blob([arr], { type: mime });
-    }
+    const dataUrlKeBlob = KS.ui.dataUrlKeBlob;
     function ekspor(format) {
       const e = P.ukuranEkspor(proyek.ukuran);
       canvas.discardActiveObject();
@@ -1331,12 +1646,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       const nama = namaFile(hasil.ext);
-      const url = URL.createObjectURL(hasil.blob);
-      const a = h('a', { href: url, download: nama });
-      document.body.append(a);
-      a.click();
-      a.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 60000);
+      KS.ui.unduhBlob(hasil.blob, nama);
       const berkas = new File([hasil.blob], nama, { type: hasil.blob.type });
       const bisaBagi = navigator.canShare && navigator.canShare({ files: [berkas] });
       let tutup = () => {};
@@ -1470,9 +1780,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const file = fotoIn.files && fotoIn.files[0];
       if (!file) return;
       try {
-        state.foto = await KS.ui.bacaFoto(file);
-        fotoPv.innerHTML = '';
-        fotoPv.append(h('img', { src: state.foto, alt: '' }));
+        aturFoto(await KS.ui.bacaFoto(file));
         jadwalGaleri();
       } catch (e) {
         galat.textContent = t('bb.galat-foto');
@@ -1566,10 +1874,392 @@ document.addEventListener('DOMContentLoaded', () => {
       await KS.editor.buka(proyek, objek);
       return proyek;
     }
+    let modeAktif = 'ai';
+    function mode(m) {
+      if (m !== 'ai' && m !== 'manual') return modeAktif;
+      modeAktif = m;
+      $('bb-ai').classList.toggle('hidden', m !== 'ai');
+      $('bb-manual').classList.toggle('hidden', m !== 'manual');
+      $('bb-mode').querySelectorAll('.seg-btn').forEach(b => {
+        b.classList.toggle('aktif', b.dataset.mode === m);
+        b.setAttribute('aria-selected', b.dataset.mode === m ? 'true' : 'false');
+      });
+      $('bb-sub').textContent = t(m === 'ai' ? 'ai.sub' : 'ai.manual-sub');
+      if (m === 'manual') { bangunGaleri(); jadwalGaleri(); }
+      return m;
+    }
+    $('bb-mode').addEventListener('click', e => {
+      const b = e.target.closest('.seg-btn');
+      if (b) mode(b.dataset.mode);
+    });
+    function aturFoto(src) {
+      state.foto = src;
+      fotoPv.innerHTML = '';
+      fotoPv.append(h('img', { src: src, alt: '' }));
+    }
+    async function pakaiFoto(src, ukuran) {
+      aturFoto(src);
+      if (ukuran && P.UKURAN[ukuran]) { state.ukuran = ukuran; aturChip($('bb-ukuran'), ukuran); }
+      if (P.validasiBayi(data(), P.hariIni()).ok) return buat();
+      KS.nav.switchTab('babyborn');
+      mode('manual');
+      galat.textContent = '';
+      KS.ui.toast(t('ai.kartu-isi-data'));
+      return null;
+    }
     $('bb-contoh').addEventListener('click', isiContoh);
     $('bb-buat').addEventListener('click', () => { buat(); });
-    KS.nav.onSwitch(tab => { if (tab === 'babyborn') { muatProfil(); bangunGaleri(); jadwalGaleri(); } });
-    KS.babyborn = { isiContoh, buat, data };
+    KS.nav.onSwitch(tab => { if (tab === 'babyborn') { muatProfil(); if (modeAktif === 'manual') { bangunGaleri(); jadwalGaleri(); } } });
+    KS.babyborn = { isiContoh, buat, data, mode, pakaiFoto };
+  })();
+
+  (function () {
+    const A = window.KSAi;
+    const opsi = { batasMs: 90000, jedaMs: 1500 };
+    function galatDari(kunci) {
+      const e = new Error(kunci);
+      e.galat = kunci;
+      return e;
+    }
+    function tunggu(ms, sinyal) {
+      return new Promise((ok, no) => {
+        if (sinyal && sinyal.aborted) { no(galatDari('ai.dibatalkan')); return; }
+        const henti = () => { clearTimeout(tm); no(galatDari('ai.dibatalkan')); };
+        const tm = setTimeout(() => { if (sinyal) sinyal.removeEventListener('abort', henti); ok(); }, ms);
+        if (sinyal) sinyal.addEventListener('abort', henti, { once: true });
+      });
+    }
+    async function sekali(body, sinyal) {
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=${apiKey}`;
+      const ctrl = new AbortController();
+      let habis = false;
+      const tm = setTimeout(() => { habis = true; ctrl.abort(); }, opsi.batasMs);
+      const teruskan = () => ctrl.abort();
+      if (sinyal) sinyal.addEventListener('abort', teruskan, { once: true });
+      const sebab = () => (sinyal && sinyal.aborted ? 'ai.dibatalkan' : habis ? 'ai.galat-waktu' : null);
+      try {
+        let res;
+        try {
+          res = await fetch(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body, signal: ctrl.signal });
+        } catch (e) {
+          throw galatDari(sebab() || 'ai.galat-jaringan');
+        }
+        let json = null;
+        try { json = await res.json(); } catch (e) { json = null; }
+        if (sebab()) throw galatDari(sebab());
+        if (!res.ok) throw galatDari(A.galatHttp(res.status));
+        const r = A.bacaRespons(json);
+        if (!r.ok) throw galatDari(r.galat);
+        return r;
+      } finally {
+        clearTimeout(tm);
+        if (sinyal) sinyal.removeEventListener('abort', teruskan);
+      }
+    }
+    async function gambar(o) {
+      const foto = A.pecahDataUrl(o.foto);
+      if (!o.prompt || !foto) throw galatDari('ai.galat-umum');
+      const body = JSON.stringify({
+        contents: [{ parts: [{ text: o.prompt }, { inlineData: foto }] }],
+        generationConfig: { responseModalities: ['TEXT', 'IMAGE'], imageConfig: { aspectRatio: o.rasio } }
+      });
+      for (let ke = 0; ; ke++) {
+        try {
+          return await sekali(body, o.sinyal);
+        } catch (e) {
+          const kunci = e.galat || 'ai.galat-umum';
+          const jeda = A.jedaUlang(kunci, ke, opsi.jedaMs);
+          if (jeda < 0 || (o.sinyal && o.sinyal.aborted)) throw e.galat ? e : galatDari(kunci);
+          console.warn('[kidsstudio] AI diulang (' + kunci + '), percobaan ' + (ke + 2));
+          await tunggu(jeda, o.sinyal);
+        }
+      }
+    }
+    KS.ai = { gambar, opsi };
+  })();
+
+  (function () {
+    const t = KS.i18n.t;
+    const P = window.KSPure;
+    const A = window.KSAi;
+    const h = KS.ui.h;
+    const unggah = $('ai-unggah');
+    const fotoIn = $('ai-foto');
+    const fotoPv = $('ai-foto-pv');
+    const galat = $('ai-galat');
+    const btnBuat = $('ai-buat');
+    const btnPerhalus = $('ai-perhalus');
+    const btnBatal = $('ai-batal');
+    const status = $('ai-status');
+    const kosong = $('ai-kosong');
+    const wadah = $('ai-hasil');
+    const st = { foto: null, tema: 'keranjang-rotan', rasio: '4:5', nuansa: 'netral', jumlah: 2, hasil: [], ctrl: null, aktif: 0 };
+
+    function ikon(nama) { return h('span', { kelas: 'ico', html: KS.ikon.svg(nama) }); }
+    function aksi(nama, kunci, fn, kelas) {
+      return h('button', { type: 'button', kelas: 'aksi' + (kelas ? ' ' + kelas : ''), onclick: fn }, ikon(nama), h('span', { teks: t(kunci) }));
+    }
+    function tandai(wadahEl, attr, nilai) {
+      wadahEl.querySelectorAll('[' + attr + ']').forEach(el => el.classList.toggle('aktif', el.getAttribute(attr) === String(nilai)));
+    }
+
+    const temaWadah = $('ai-tema');
+    A.GRUP.forEach(g => {
+      temaWadah.append(h('div', { kelas: 'ai-grup', teks: t(g.judulKey) }));
+      temaWadah.append(h('div', { kelas: 'ai-tema-grid' }, A.TEMA.filter(x => x.grup === g.id).map(tm =>
+        h('button', { type: 'button', kelas: 'ai-tema', 'data-tema': tm.id, 'aria-label': t(tm.judulKey), onclick: () => pilihTema(tm.id) },
+          h('span', { kelas: 'ai-tema-pv', gaya: 'background:linear-gradient(135deg,' + tm.warna[0] + ',' + tm.warna[1] + ')', teks: tm.ikon }),
+          h('b', { teks: t(tm.judulKey) }),
+          h('small', { teks: t(tm.subKey) })))));
+    });
+    function pilihTema(id) {
+      st.tema = id;
+      tandai(temaWadah, 'data-tema', id);
+      galat.textContent = '';
+    }
+    const rasioWadah = $('ai-rasio');
+    A.RASIO.forEach(r => {
+      const s = 26 / Math.max(r.w, r.h);
+      rasioWadah.append(h('button', { type: 'button', 'data-rasio': r.id, onclick: () => { st.rasio = r.id; tandai(rasioWadah, 'data-rasio', r.id); } },
+        h('i', { gaya: 'width:' + Math.round(r.w * s) + 'px;height:' + Math.round(r.h * s) + 'px' }),
+        h('span', { teks: t(r.judulKey) }),
+        h('small', { teks: t(r.subKey) })));
+    });
+    const nuansaWadah = $('ai-nuansa');
+    A.NUANSA.forEach(n => {
+      nuansaWadah.append(h('button', { type: 'button', kelas: 'chip', 'data-nuansa': n.id, onclick: () => { st.nuansa = n.id; tandai(nuansaWadah, 'data-nuansa', n.id); } },
+        h('span', { kelas: 'titik', gaya: 'background:' + n.warna }), h('span', { teks: t(n.judulKey) })));
+    });
+    const jumlahWadah = $('ai-jumlah');
+    [1, 2, 3, 4].forEach(n => {
+      jumlahWadah.append(h('button', { type: 'button', kelas: 'chip', 'data-jumlah': String(n), teks: String(n), onclick: () => { st.jumlah = n; tandai(jumlahWadah, 'data-jumlah', n); } }));
+    });
+    pilihTema(st.tema);
+    tandai(rasioWadah, 'data-rasio', st.rasio);
+    tandai(nuansaWadah, 'data-nuansa', st.nuansa);
+    tandai(jumlahWadah, 'data-jumlah', st.jumlah);
+
+    function aturFoto(src) {
+      st.foto = src;
+      fotoPv.src = src;
+      fotoPv.classList.remove('hidden');
+      unggah.classList.add('ada');
+      galat.textContent = '';
+    }
+    fotoIn.addEventListener('change', async () => {
+      const f = fotoIn.files && fotoIn.files[0];
+      if (!f) return;
+      try {
+        aturFoto(await KS.ui.bacaFoto(f));
+      } catch (e) {
+        galat.textContent = t('bb.galat-foto');
+      }
+    });
+
+    function namaTema(it) {
+      const tm = A.cari(A.TEMA, it.tema);
+      return it.mode === 'perhalus' || !tm ? t('ai.perhalus-nama') : t('ai.nama-proyek', { tema: t(tm.judulKey) });
+    }
+    function ekstensi(src) { return /^data:image\/jpe?g/.test(src) ? 'jpg' : 'png'; }
+    function namaFile(dasar, src, n) {
+      return ('baby-born-' + dasar + (n ? '-' + n : '')).replace(/[^\w-]+/g, '-').toLowerCase() + '.' + ekstensi(src);
+    }
+    function kartu(it, i) {
+      const r = A.cari(A.RASIO, it.rasio) || A.RASIO[0];
+      const nomor = h('span', { kelas: 'ai-nomor', teks: t('ai.nomor', { n: i + 1 }) });
+      if (it.status === 'ok') {
+        return h('div', { kelas: 'ai-kartu', 'data-i': String(i), 'data-status': 'ok' },
+          h('img', { src: it.src, alt: namaTema(it) }), nomor,
+          h('div', { kelas: 'aksi-grid' },
+            aksi('unduh', 'ai.unduh', () => unduh(i), 'utama'),
+            aksi('bagikan', 'ai.bagikan', () => bagikan(i)),
+            it.proyekId ? aksi('cek', 'ai.sudah-simpan', () => KS.nav.switchTab('proyekku'), 'tersimpan') : aksi('simpan', 'ai.simpan', () => simpan(i)),
+            aksi('kartu', 'ai.jadikan-kartu', () => jadikanKartu(i)),
+            aksi('ulang', 'ai.ulang', () => ulang(i)),
+            aksi('bandingkan', 'ai.bandingkan', () => bandingkan(i))));
+      }
+      const gagal = it.status === 'gagal';
+      return h('div', { kelas: 'ai-kartu', 'data-i': String(i), 'data-status': it.status },
+        h('div', { kelas: 'ai-tunggu' + (gagal ? ' gagal' : ''), gaya: 'aspect-ratio:' + r.w + '/' + r.h },
+          gagal ? null : h('span', { kelas: 'ai-putar' }),
+          h('span', { teks: gagal ? t(it.galat) : t(it.status === 'jalan' ? 'ai.memproses-satu' : 'ai.menunggu') }),
+          gagal && it.galat !== 'ai.galat-diblokir' ? h('button', { type: 'button', kelas: 'ks-btn ks-btn-kecil ks-btn-sekunder', onclick: () => ulang(i) }, ikon('ulang'), h('span', { teks: t('ai.ulang') })) : null),
+        nomor);
+    }
+    function render() {
+      wadah.innerHTML = '';
+      st.hasil.forEach((it, i) => wadah.append(kartu(it, i)));
+      kosong.classList.toggle('hidden', st.hasil.length > 0);
+    }
+    function renderSatu(i) {
+      const lama = wadah.querySelector('.ai-kartu[data-i="' + i + '"]');
+      const baru = kartu(st.hasil[i], i);
+      if (lama) lama.replaceWith(baru); else render();
+    }
+    function perbaruiStatus() {
+      const total = st.hasil.length;
+      const selesai = st.hasil.filter(x => x.status === 'ok' || x.status === 'gagal').length;
+      const sibuk = st.aktif > 0;
+      status.classList.toggle('hidden', !sibuk);
+      if (sibuk) status.textContent = t('ai.memproses', { selesai: selesai, total: total });
+      btnBuat.disabled = sibuk;
+      btnPerhalus.disabled = sibuk;
+      btnBatal.classList.toggle('hidden', !sibuk);
+    }
+    async function jalankan(i, sinyal) {
+      const it = st.hasil[i];
+      if (sinyal.aborted) { it.status = 'gagal'; it.galat = 'ai.dibatalkan'; renderSatu(i); return; }
+      it.status = 'jalan';
+      renderSatu(i);
+      try {
+        const r = await KS.ai.gambar({ prompt: A.susunPrompt(it), foto: st.foto, rasio: it.rasio, sinyal: sinyal });
+        it.src = r.src;
+        it.status = 'ok';
+        it.proyekId = null;
+      } catch (e) {
+        if (!e.galat) console.error('[kidsstudio] AI:', e);
+        it.status = 'gagal';
+        it.galat = e.galat || 'ai.galat-umum';
+      }
+      renderSatu(i);
+      perbaruiStatus();
+    }
+    function mulaiKerja() {
+      if (!st.ctrl) st.ctrl = new AbortController();
+      st.aktif++;
+      perbaruiStatus();
+      return st.ctrl.signal;
+    }
+    function selesaiKerja() {
+      st.aktif = Math.max(0, st.aktif - 1);
+      if (!st.aktif) st.ctrl = null;
+      perbaruiStatus();
+    }
+    async function buat(modeBuat) {
+      if (st.aktif) return null;
+      const m = modeBuat === 'perhalus' ? 'perhalus' : 'tema';
+      const cek = A.validasiAi({ foto: st.foto, tema: st.tema, rasio: st.rasio, nuansa: st.nuansa, jumlah: st.jumlah, mode: m });
+      if (!cek.ok) {
+        galat.textContent = t(cek.galat);
+        galat.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        return null;
+      }
+      galat.textContent = '';
+      const tm = m === 'perhalus' ? null : A.cari(A.TEMA, st.tema);
+      st.hasil = A.pilihVariasi(tm, st.jumlah).map(v => ({ mode: m, tema: tm ? tm.id : null, rasio: st.rasio, nuansa: st.nuansa, variasi: v, status: 'tunggu' }));
+      render();
+      if (window.innerWidth < 1001) $('ai-hasil').parentElement.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      const sinyal = mulaiKerja();
+      await A.jalankanTerbatas(st.hasil.map((_, i) => () => jalankan(i, sinyal)), 2);
+      selesaiKerja();
+      const ok = st.hasil.filter(x => x.status === 'ok').length;
+      if (ok === st.hasil.length) KS.ui.toast(t('ai.selesai', { n: ok }));
+      else if (ok) KS.ui.toast(t('ai.sebagian', { n: ok, total: st.hasil.length }));
+      else KS.ui.toast(t((st.hasil[0] && st.hasil[0].galat) || 'ai.galat-umum'), 'galat');
+      return st.hasil;
+    }
+    async function ulang(i) {
+      const it = st.hasil[i];
+      if (!it || it.status === 'jalan' || it.status === 'tunggu') return null;
+      const sinyal = mulaiKerja();
+      await jalankan(i, sinyal);
+      selesaiKerja();
+      return it;
+    }
+    function itemOk(i) {
+      const it = st.hasil[i];
+      return it && it.status === 'ok' ? it : null;
+    }
+    function unduhSrc(src, nama) {
+      KS.ui.unduhBlob(KS.ui.dataUrlKeBlob(src), nama);
+      KS.ui.toast(t('ekspor.selesai'));
+    }
+    async function bagikanSrc(src, nama) {
+      const blob = KS.ui.dataUrlKeBlob(src);
+      const berkas = new File([blob], nama, { type: blob.type });
+      if (navigator.canShare && navigator.canShare({ files: [berkas] })) {
+        try { await navigator.share({ files: [berkas] }); } catch (e) {}
+        return;
+      }
+      KS.ui.toast(t('ai.bagikan-tidak-bisa'));
+      KS.ui.unduhBlob(blob, nama);
+    }
+    function unduh(i) {
+      const it = itemOk(i);
+      if (it) unduhSrc(it.src, namaFile(it.tema || 'perhalus', it.src, i + 1));
+    }
+    function bagikan(i) {
+      const it = itemOk(i);
+      if (it) return bagikanSrc(it.src, namaFile(it.tema || 'perhalus', it.src, i + 1));
+    }
+    function kecilkan(src, lebar) {
+      return new Promise(ok => {
+        const img = new Image();
+        img.onload = () => {
+          const s = Math.min(1, lebar / img.naturalWidth);
+          const c = document.createElement('canvas');
+          c.width = Math.max(1, Math.round(img.naturalWidth * s));
+          c.height = Math.max(1, Math.round(img.naturalHeight * s));
+          c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+          ok(c.toDataURL('image/jpeg', 0.78));
+        };
+        img.onerror = () => ok(null);
+        img.src = src;
+      });
+    }
+    async function simpan(i) {
+      const it = itemOk(i);
+      if (!it) return null;
+      if (it.proyekId) return it.proyekId;
+      const sekarang = Date.now();
+      const p = {
+        id: P.buatId(), editor: 'babyborn', jenis: 'foto-ai', nama: namaTema(it), mode: it.mode, tema: it.tema, rasio: it.rasio, nuansa: it.nuansa,
+        ukuran: A.rasioKeUkuran(it.rasio), gambar: it.src, thumbnail: await kecilkan(it.src, 360), dibuat: sekarang, diubah: sekarang
+      };
+      try {
+        await KS.store.saveProject(p);
+      } catch (e) {
+        console.error('[kidsstudio] simpan foto AI:', e);
+        KS.ui.toast(t('galat.penyimpanan'), 'galat');
+        return null;
+      }
+      it.proyekId = p.id;
+      renderSatu(i);
+      KS.ui.toast(t('ai.tersimpan'));
+      return p.id;
+    }
+    function jadikanKartu(i) {
+      const it = itemOk(i);
+      return it ? KS.babyborn.pakaiFoto(it.src, A.rasioKeUkuran(it.rasio)) : null;
+    }
+    function bandingkan(i) {
+      const it = itemOk(i);
+      if (!it || !st.foto) return;
+      let tutup = () => {};
+      tutup = KS.ui.modal(h('div', null,
+        h('b', { kelas: 'judul-font', gaya: 'font-size:22px', teks: t('ai.bandingkan') }),
+        h('div', { kelas: 'ai-banding' },
+          h('div', null, h('b', { teks: t('ai.sebelum') }), h('img', { src: st.foto, alt: t('ai.sebelum') })),
+          h('div', null, h('b', { teks: t('ai.sesudah') }), h('img', { src: it.src, alt: t('ai.sesudah') }))),
+        h('button', { type: 'button', kelas: 'ks-btn ks-btn-sekunder ks-btn-lebar', gaya: 'margin-top:14px', teks: t('nav.tutup'), onclick: () => tutup() })));
+    }
+    function lihat(p) {
+      let tutup = () => {};
+      const nama = namaFile(p.tema || 'perhalus', p.gambar, 0);
+      tutup = KS.ui.modal(h('div', null,
+        h('b', { kelas: 'judul-font', gaya: 'font-size:22px', teks: p.nama || t('ai.lihat-judul') }),
+        h('img', { src: p.gambar, alt: p.nama || '' }),
+        h('div', { kelas: 'aksi-grid' },
+          aksi('unduh', 'ai.unduh', () => unduhSrc(p.gambar, nama), 'utama'),
+          aksi('bagikan', 'ai.bagikan', () => bagikanSrc(p.gambar, nama)),
+          aksi('kartu', 'ai.jadikan-kartu', () => { tutup(); KS.babyborn.pakaiFoto(p.gambar, p.ukuran); })),
+        h('button', { type: 'button', kelas: 'ks-btn ks-btn-sekunder ks-btn-lebar', gaya: 'margin-top:14px', teks: t('nav.tutup'), onclick: () => tutup() })));
+      return tutup;
+    }
+    btnBuat.addEventListener('click', () => { buat('tema'); });
+    btnPerhalus.addEventListener('click', () => { buat('perhalus'); });
+    btnBatal.addEventListener('click', () => { if (st.ctrl) st.ctrl.abort(); KS.ui.toast(t('ai.dibatalkan')); });
+    KS.babybornAi = { buat, ulang, unduh, bagikan, simpan, jadikanKartu, bandingkan, lihat, pilihTema, state: () => st };
   })();
 
   (function () {
@@ -1695,12 +2385,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const terakhir = $('beranda-terakhir');
     const terakhirList = $('beranda-terakhir-list');
     $('beranda-ajak-tombol').addEventListener('click', () => KS.nav.switchTab('profil'));
-    $('beranda-mulai').addEventListener('click', () => KS.nav.switchTab('babyborn'));
+    $('beranda-mulai').addEventListener('click', () => { KS.nav.switchTab('babyborn'); KS.babyborn.mode('ai'); });
     document.querySelectorAll('[data-buka]').forEach(b => b.addEventListener('click', () => KS.nav.switchTab(b.dataset.buka)));
     function segarkan() {
       KS.store.getProfiles().then(items => {
         const anak = items[0];
-        sapa.textContent = anak ? t('beranda.sapa-anak', { nama: anak.panggilan || anak.nama }) : t('beranda.judul');
+        sapa.textContent = anak ? t('beranda.sapa-pendek', { nama: anak.panggilan || anak.nama }) : t('beranda.kecil');
         ajak.classList.toggle('hidden', !!anak);
       }).catch(() => { ajak.classList.remove('hidden'); });
       KS.store.listProjects().then(items => {
